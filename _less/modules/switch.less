@@ -1,0 +1,22 @@
+#toggler {
+    .rounded(20px);
+    background: rgba(0, 0, 0, 0.03);
+    .box-shadow(inset 0 0 0 1px rgba(0, 0, 0, 0.25), inset 0 1px 3px 0 rgba(0, 0, 0, 0.1));
+    .size(18px, 40px);
+    float: left;
+    padding: 3px 4px;
+    cursor: pointer;
+    margin: 2px 10px;
+    .rel();
+
+    .handle {
+        background: @white;
+        .size(12px, 12px);
+        .rounded(50%);
+        .box-shadow(0 0 0 1px rgba(0, 0, 0, 0.30));
+        transition: left 0.3s ease-in 0s;
+        .abs();
+        top: 3px;
+        left: 24px;
+    }
+}

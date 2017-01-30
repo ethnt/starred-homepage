@@ -1,0 +1,45 @@
+<nav id="homepageMenu">
+
+    <div id="homepageContainer" >
+
+        <div class="brand floatLeft">
+            <a href="{{ base_path_home }}" title="Starred">Starred</a>
+        </div>
+
+        <button class="toggle-navBar show-lte-phone" onclick="$('.toggleMobileNav').slideToggle(); $('.icon-button').toggleClass('active');"><span class="icon-button"></span></button>
+
+        <ul class="toggleMobileNav floatRight clean">
+
+            <li class="shadow"></li>
+
+            {% assign pages = site.pages | where: 'navigation', 'header' | sort: 'position' %}
+            {% for page in pages %}
+                {% if page.title %}
+                <li>
+                    <a class="page-link" href="{{ page.url }}">{% t page.title %}</a>
+                </li>
+                {% endif %}
+            {% endfor %}            
+      
+
+            <li class="exception">
+                <!-- HOMEPAGE_LOGIN_BUTTON -->
+                <a class="btn btn-special loginButton" href="">Login</a>
+            </li>
+
+            <li class="exception">
+                <!-- HOMEPAGE_SIGN_UP_BUTTON -->
+                <a class="btn btn-action" href="">Sign Up</a>
+            </li>
+        
+        </ul>
+
+    </div>
+
+</nav>
+<div id="homepageMenuSpacer"></div>
+
+
+<div id="browserMessage"></div>
+
+

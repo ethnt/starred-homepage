@@ -1,0 +1,38 @@
+//TagHelper
+
+#tagHelper{
+    z-index: @zindexModal + 10;
+    margin: 0;
+    padding: 0;
+    background-color: @white;
+    border: 1px solid @mercury;
+    .box-shadow(0 1px 3px 0 rgba(0, 0, 0, 0.1));
+    max-height: 280px;
+    width: 265px;
+    overflow-y: auto;
+    .rounded(3px);
+    font-size: @altFontSize;
+
+
+    li{
+        padding: 5px 10px;
+        cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-top: 1px solid @mercury;
+
+        &:first-child{
+            border-top: 0px;
+        }
+
+        &:hover{
+            background: @shakespeare;
+            color: @white;
+            -webkit-box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1), inset 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow:    inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1), inset 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+            box-shadow:         inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1), inset 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+        }
+
+    }
+
+}

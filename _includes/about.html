@@ -1,0 +1,157 @@
+  <header>
+        <!-- <?= $this->tr->tr('HOMEPAGE_CONTACT_HEADER_TITLE'); ?> -->
+        <h1>We help companies to earn the love by providing the right insights</h1>
+    </header>
+
+    <article class="container">
+
+        <section class="row">
+
+            <div class="col-tablet-4 col-phone-6 col-phoneSmall-12">
+                <!-- <?= $this->tr->tr('HOMEPAGE_CONTACT_WHY_STARRED_1_TITLE'); ?> -->
+                <h3>Why we believe in feedback</h3>
+                <!-- <?= $this->tr->tr('HOMEPAGE_CONTACT_WHY_STARRED_1_TEXT'); ?> -->
+                <p>The average company suffers a staggering 50% loss of clients every 5 years. Collecting and following up on feedback is the crucial link to know what's really important to clients and increase their loyalty.</p>
+            </div>
+
+            <div class="col-tablet-4 col-phone-6 col-phoneSmall-12">
+                <!-- <?= $this->tr->tr('HOMEPAGE_CONTACT_WHY_STARRED_2_TITLE'); ?> -->
+                <h3>Why Response rates are decreasing</h3>
+                <!-- <?= $this->tr->tr('HOMEPAGE_CONTACT_WHY_STARRED_2_TEXT'); ?> -->
+                <p>How often are you invited to a Customer Satisfaction Survey where you are only at 8% progress after 3 pages? There is more and more 'Survey fatigue' happening which results in decreasing response rates.</p>
+            </div>
+
+            <div class="col-tablet-4 col-phone-6 col-phoneSmall-12">
+                <!-- <?= $this->tr->tr('HOMEPAGE_CONTACT_WHY_STARRED_3_TITLE'); ?> -->
+                <h3>Time to put the respondent first</h3>
+                <!-- <?= $this->tr->tr('HOMEPAGE_CONTACT_WHY_STARRED_3_TEXT'); ?> -->
+                <p>Clients are more than willing to provide feedback, but let's respect their busy schedule. When you put the respondent first, make it fun again to provide feedback and you follow up on it loyalty will increase guaranteed!</p>
+            </div>
+
+        </section>
+
+    </article>
+
+    <div class="background grayBlack center-text">
+        <article class="container">
+            <section class="row">
+                <!-- <?= $this->tr->tr('HOMEPAGE_CONTACT_SUPPORT_CHANNELS_TITLE'); ?> -->
+                <h3>We're more than happy to tell you how we work:</h3>
+
+                <ul class="horizontal">
+                    <li><a href="tel:+31202610990"><span class="iconStarred-incommingPhoneCal icon-lg"></span> +31 (0) 20 26 10 990</a></li>
+                    <!-- <?= $this->tr->tr('START_CHAT_TEXT'); ?> -->
+                    <li><a href="javascript:void(0);" onclick="Intercom('showNewMessage');"><span class="iconStarred-keyboard icon-lg"></span>Start a chat</a></li>
+                    <!-- <?= $this->tr->tr('PLAN_A_DEMO_TEXT'); ?> -->
+                    <li><a href="https://calendly.com/lynn-2/" target="_blank"><span class="iconStarred-calendarOutline icon-lg"></span> Plan a demo</a></li>
+                    <li><a href="mailto:support@starred.com"><span class="iconStarred-mailOutline icon-lg"></span> support@starred.com</a></li>
+                </ul>
+            </section>
+        </article>
+    </div>
+
+    <article class="container">
+        <section class="row">
+            <!-- <?= $this->tr->tr('HOMEPAGE_CONTACT_PEOPLE_OF_TITLE'); ?> -->
+            <h2 class="center-text">The people behind Starred</h2>
+            {% assign team = site.team | where: 'category', 'team' | sort: 'position' %}
+
+            {% for member in team %}
+              <div class="col-tablet-4 col-phone-6 col-phoneSmall-12">
+                 <div class="border">
+                    <img class="mediumProfileImg floatLeft" src="{{ base_path }}{{ member.image }}" alt="{{ member.title }}">
+                    <p class="ellipsis name noMargin">{{ member.title }}</p>
+                    <p class="ellipsis noMargin">{{ member.subtitle }}</p>
+                     {% if member.email %}  
+                     <a href="mailto:{{ member.email }}" rel="nofollow" class="email"><span class="iconStarred-mail"></span></a>
+                     {% endif %}
+                     {% if member.linkedin %}  
+                     <a href="{{ member.linkedin }}" rel="nofollow" target="_blank" class="linkedin" title="{{ member.title }}"><span class="iconStarred-linkedin"></span></a>
+                     {% endif %}
+                     {% if member.website %}
+                        <a href="{{ member.website }}" rel="nofollow" target="_blank" class="careers" title="View all open positions"><span class="iconStarred-company">
+                     {% endif %}
+                 </div>
+              </div>
+            {% endfor %}
+                
+        </section>
+    </article>
+
+    <div class="background green center-text">
+        <article class="container">
+            <section class="row">
+                <!-- <?= $this->tr->tr('HOMEPAGE_CONTACT_HIRING_TITLE'); ?> -->
+                <h2>We're hiring!</h2>
+
+                <ul class="horizontal">
+                    <li><a href=""><span class="iconStarred-code icon-lg"></span> Development</a></li>
+                    <li><a href=""><span class="iconStarred-handShake icon-lg"></span> Business Development</a></li>
+                    <li><a href=""><span class="iconStarred-support icon-lg"></span> Customer Care</a></li>
+                    <li><a href=""><span class="iconStarred-clown icon-lg"></span> Open Application</a></li>
+                </ul>
+                <!-- <?= $this->tr->tr('HOMEPAGE_CONTACT_POSITIONS_BUTTON'); ?> -->
+                <a class="btn" href="/<?= $languageCode; ?>/careers/">See all open positions</a>
+            </section>
+        </article>
+    </div>
+    
+    <div class="background black contact" id="contact">
+
+        <article class="container">
+
+            <section class="row">
+
+                <div class="col-tablet-8 background">
+                    <!-- <?= $this->tr->tr('HOMEPAGE_CONTACT_MESSAGE_TITLE'); ?> -->
+                    <h2 class=center-text>Get in touch</h2>
+
+                    <form method="POST">
+
+                        <fieldset>
+                            <!-- <?= $this->tr->tr('CONTACT_MESSAGE_PLACEHOLDER'); ?> -->
+                            <label for="feedback">Type your question here…</label>
+                            <textarea id="feedback" name="message" placeholder="Type your question here…"></textarea>
+
+                        </fieldset>
+
+                        <fieldset>
+                            <!-- <?= $this->tr->tr('CONTACT_NAME_PLACEHOLDER'); ?> -->
+                            <label for="name">Your name</label>
+                            <input id="name" name="name" placeholder="Your name" type="text">
+                            <!-- <?= $this->tr->tr('CONTACT_EMAIL_ADDRESS_PLACEHOLDER'); ?> -->
+                            <label for="email">Your email</label>
+                            <input id="email" name="email" placeholder="Your email" type="email">
+                            <!-- <?= $this->tr->tr('CONTACT_SEND_BUTTON'); ?> -->
+                            <button type="submit" class="btn btn-primary">Send</button>
+
+                        </fieldset>
+
+                    </form>
+
+                </div>
+
+                <div class="col-tablet-4 center-text address">
+
+                    <p>
+                        <span class="iconStarred-office icon-lg"></span><br>
+                        Starred B.V.<br>
+                        Nieuwe Herengracht 47<br>
+                        1011 RN Amsterdam<br>
+                        The Netherlands<br>
+                        +31 (0) 20 26 10 990
+                    </p>
+                    -
+                    <br>
+                    <p>
+                        41 Corsham Street<br>
+                        N1 6DR London<br>
+                        United Kingdom
+                    </p>
+                </div>
+
+            </section>
+
+        </article>
+
+    </div>

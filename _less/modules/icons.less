@@ -1,0 +1,417 @@
+// inline element with the appropriate classes, like so:
+//
+// <a href="#"><span class="iconStarred iconStarred-star"></span> Star</a>
+
+
+// NOTE: unable to use [class*="iconStarred"]:before, cause the extend function is used in CSS
+.iconStarred-star:before,
+.iconStarred-leftStar:before,
+.iconStarred-rightStar:before,
+.iconStarred-company:before,
+.iconStarred-companyInfo:before,
+.iconStarred-download:before,
+.iconStarred-mail:before,
+.iconStarred-newForm:before,
+.iconStarred-segments:before,
+.iconStarred-link:before,
+.iconStarred-info:before,
+.iconStarred-companyLarge:before,
+.iconStarred-lock:before,
+.iconStarred-moderator:before,
+.iconStarred-theme:before,
+.iconStarred-marker:before,
+.iconStarred-add:before,
+.iconStarred-arrowRight:before,
+.iconStarred-archive:before,
+.iconStarred-stats:before,
+.iconStarred-upload:before,
+.iconStarred-check:before,
+.iconStarred-csv:before,
+.iconStarred-status-ok:before,
+.iconStarred-status-queued:before,
+.iconStarred-status-approval:before,
+.iconStarred-status-help:before,
+.iconStarred-loading:before,
+.iconStarred-error:before,
+.iconStarred-errorOutline:before,
+.iconStarred-saveAs:before,
+.iconStarred-save:before,
+.iconStarred-form:before,
+.iconStarred-user:before,
+.iconStarred-api:before,
+.iconStarred-edit:before,
+.iconStarred-pulldown:before,
+.iconStarred-store:before,
+.iconStarred-copy:before,
+.iconStarred-limited:before,
+.iconStarred-private:before,
+.iconStarred-invite:before,
+.iconStarred-response:before,
+.iconStarred-preview:before,
+.iconStarred-delete:before,
+.iconStarred-clone:before,
+.iconStarred-publish:before,
+.iconStarred-invitations:before,
+.iconStarred-share:before,
+.iconStarred-linkedin:before,
+.iconStarred-back:before,
+.iconStarred-zoomOut:before,
+.iconStarred-pullup:before,
+.iconStarred-pullSideRight:before,
+.iconStarred-move:before,
+.iconStarred-usersOutline:before,
+.iconStarred-users:before,
+.iconStarred-close:before,
+.iconStarred-medal:before,
+.iconStarred-remove:before,
+.iconStarred-csvUpload:before,
+.iconStarred-warning:before,
+.iconStarred-file:before,
+.iconStarred-paste:before,
+.iconStarred-comment:before,
+.iconStarred-ces5:before,
+.iconStarred-ces4:before,
+.iconStarred-ces3:before,
+.iconStarred-ces2:before,
+.iconStarred-ces1:before,
+.iconStarred-schedule:before,
+.iconStarred-send:before,
+.iconStarred-event:before,
+.iconStarred-continuous:before,
+.iconStarred-calendar:before,
+.iconStarred-arrowLeft:before,
+.iconStarred-arrowBottom:before,
+.iconStarred-pending:before,
+.iconStarred-share-accept:before,
+.iconStarred-back-block:before,
+.iconStarred-comment-empty:before,
+.iconStarred-comment-done:before,
+.iconStarred-invitations-radio:before,
+.iconStarred-pencil:before,
+.iconStarred-dashboard:before,
+.iconStarred-revert:before,
+.iconStarred-circle:before,
+.iconStarred-sharing:before,
+.iconStarred-phone:before,
+.iconStarred-zoom:before,
+.iconStarred-world:before,
+.iconStarred-heart:before,
+.iconStarred-folder:before,
+.iconStarred-document:before,
+.iconStarred-menu:before,
+.iconStarred-switch:before,
+.iconStarred-logout:before,
+.iconStarred-userProfile:before,
+.iconStarred-uploadCloud:before,
+.iconStarred-phoneOutline:before,
+.iconStarred-heartOutline:before,
+.iconStarred-path:before,
+.iconStarred-userStar:before,
+.iconStarred-tools:before,
+.iconStarred-creditcard:before,
+.iconStarred-notes:before,
+.iconStarred-stopwatch:before,
+.iconStarred-incommingPhoneCal:before,
+.iconStarred-mailOutline:before,
+.iconStarred-calendarOutline:before,
+.iconStarred-keyboard:before,
+.iconStarred-clown:before,
+.iconStarred-code:before,
+.iconStarred-support:before,
+.iconStarred-handShake:before,
+.iconStarred-chart:before,
+.iconStarred-roller:before,
+.iconStarred-alarm:before,
+.iconStarred-signal:before,
+.iconStarred-office:before,
+.iconStarred-secure:before,
+.iconStarred-wireframe:before,
+.iconStarred-deleteMail:before,
+.iconStarred-fileFav:before,
+.iconStarred-storeOutline:before,
+.iconStarred-radar:before,
+.iconStarred-plugin:before,
+.iconStarred-group:before,
+.iconStarred-refresh:before,
+.iconStarred-checkOutline:before,
+.iconStarred-twitter:before,
+.iconStarred-facebook:before,
+.iconStarred-bold:before,
+.iconStarred-italic:before,
+.iconStarred-ul:before,
+.iconStarred-ol:before,
+.iconStarred-quot:before,
+.iconStarred-starredLogo:before,
+.iconStarred-formEdit:before,
+.iconStarred-userIcon:before,
+.iconStarred-statistics:before,
+.iconStarred-print:before,
+.iconStarred-settings:before,
+.iconStarred-abacus:before,
+.iconStarred-starOutline:before,
+.iconStarred-like:before,
+.iconStarred-switchSettings:before,
+.iconStarred-gauge:before,
+.iconStarred-chat:before,
+.iconStarred-smileys:before,
+.iconStarred-play:before,
+.iconStarred-enlarge:before,
+.iconStarred-exclam:before,
+.iconStarred-addingUser:before,
+.iconStarred-cardInfo:before,
+.iconStarred-paint:before,
+.iconStarred-language:before
+{
+    display: inline-block;
+    font-family: 'starred_font-familyregular';
+    speak: none; // Disable for screenreaders
+    text-rendering: auto;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    line-height: 1;
+    .rel();
+    top: 1px;
+    cursor: default;
+}
+
+a [class*="iconStarred"]:before,
+button [class*="iconStarred"]:before
+{ cursor: pointer; }
+
+.iconStarred-star:before               { content: '\0053'; }
+.iconStarred-leftStar:before           { content: '\002A'; }
+.iconStarred-rightStar:before          { content: '\0028'; }
+.iconStarred-back:before               { content: '\0041'; }
+.iconStarred-company:before            { content: '\0042'; }
+.iconStarred-companyInfo:before        { content: '\004A'; }
+.iconStarred-csv:before                { content: '\0043'; }
+.iconStarred-download:before           { content: '\0044'; }
+.iconStarred-mail:before               { content: '\0045'; }
+.iconStarred-newForm:before            { content: '\0046'; }
+.iconStarred-segments:before           { content: '\0047'; }
+.iconStarred-link:before               { content: '\0048'; }
+.iconStarred-info:before               { content: '\0049'; }
+.iconStarred-companyLarge:before       { content: '\004B'; }
+.iconStarred-lock:before               { content: '\004C'; }
+.iconStarred-moderator:before          { content: '\004D'; }
+.iconStarred-theme:before              { content: '\004E'; }
+.iconStarred-marker:before             { content: '\004F'; }
+.iconStarred-add:before                { content: '\0050'; }
+.iconStarred-arrowRight:before         { content: '\0039'; }
+.iconStarred-arrowLeft:before          { content: '\00BD'; }
+.iconStarred-archive:before            { content: '\0052'; }
+.iconStarred-stats:before              { content: '\0054'; }
+.iconStarred-upload:before             { content: '\0055'; }
+.iconStarred-check:before              { content: '\0056'; }
+.iconStarred-status-ok:before          { content: '\00C7'; }
+.iconStarred-status-queued:before      { content: '\00C8'; }
+.iconStarred-status-approval:before    { content: '\0051'; }
+.iconStarred-status-help:before        { content: '\0071'; }
+.iconStarred-zoomOut:before            { content: '\007A'; }
+.iconStarred-loading:before            { content: '\00C9'; }
+.iconStarred-error:before              { content: '\0022'; }
+.iconStarred-errorOutline:before       { content: '\0027'; }
+.iconStarred-save:before               { content: '\0067'; }
+.iconStarred-saveAs:before             { content: '\0068'; }
+.iconStarred-form:before               { content: '\0066'; }
+.iconStarred-user:before               { content: '\0075'; }
+.iconStarred-api:before                { content: '\0062'; }
+.iconStarred-edit:before               { content: '\0065'; }
+.iconStarred-pulldown:before           { content: '\0036'; }
+.iconStarred-pullup:before             { content: '\0035'; }
+.iconStarred-pullSideRight:before      { content: '\0038'; }
+.iconStarred-store:before              { content: '\0032'; }
+.iconStarred-copy:before               { content: '\0034'; }
+.iconStarred-limited:before            { content: '\0033'; }
+.iconStarred-private:before            { content: '\0031'; }
+.iconStarred-invite:before             { content: '\0069'; }
+.iconStarred-response:before           { content: '\0072'; }
+.iconStarred-preview:before            { content: '\0076'; }
+.iconStarred-delete:before             { content: '\005A'; }
+.iconStarred-clone:before              { content: '\0063'; }
+.iconStarred-publish:before            { content: '\0073'; }
+.iconStarred-invitations:before        { content: '\0074'; }
+.iconStarred-share:before              { content: '\003F'; }
+.iconStarred-linkedin:before           { content: '\0057'; }
+.iconStarred-move:before               { content: '\002C'; }
+.iconStarred-usersOutline:before       { content: '\0026'; }
+.iconStarred-users:before              { content: '\0029'; }
+.iconStarred-close:before              { content: '\0058'; }
+.iconStarred-medal:before              { content: '\002E'; }
+.iconStarred-remove:before             { content: '\0059'; }
+.iconStarred-csvUpload:before          { content: '\0077'; }
+.iconStarred-warning:before            { content: '\002F'; }
+.iconStarred-file:before               { content: '\0040'; }
+.iconStarred-paste:before              { content: '\003B'; }
+.iconStarred-comment:before            { content: '\002B'; }
+.iconStarred-ces5:before               { content: '\00A1'; }
+.iconStarred-ces4:before               { content: '\00A4'; }
+.iconStarred-ces3:before               { content: '\00A3'; }
+.iconStarred-ces2:before               { content: '\00A2'; }
+.iconStarred-ces1:before               { content: '\00A5'; }
+.iconStarred-schedule:before           { content: '\00AE'; }
+.iconStarred-send:before               { content: '\00BB'; }
+.iconStarred-event:before              { content: '\00A9'; }
+.iconStarred-continuous:before         { content: '\007E'; }
+.iconStarred-calendar:before           { content: '\00B6'; }
+.iconStarred-arrowBottom:before        { content: '\00BC'; }
+.iconStarred-pending:before            { content: '\006C'; }
+.iconStarred-share-accept:before       { content: '\0061'; }
+.iconStarred-back-block:before         { content: '\00B1'; }
+.iconStarred-comment-empty:before      { content: '\00BF'; }
+.iconStarred-comment-done:before       { content: '\00C0'; }
+
+.iconStarred-invitations-radio:before  { content: '\006B'; }
+.iconStarred-pencil:before             { content: '\00C3'; }
+.iconStarred-dashboard:before          { content: '\00C2'; }
+.iconStarred-revert:before             { content: '\00C1'; }
+.iconStarred-circle:before             { content: '\00C4'; }
+.iconStarred-sharing:before            { content: '\0064'; }
+.iconStarred-phone:before              { content: '\00CB'; }
+.iconStarred-zoom:before               { content: '\0079'; }
+.iconStarred-world:before              { content: '\00CC'; }
+.iconStarred-heart:before              { content: '\00CD'; }
+.iconStarred-folder:before             { content: '\00B5'; }
+.iconStarred-document:before           { content: '\00D7'; }
+.iconStarred-menu:before               { content: '\00D0'; }
+
+.iconStarred-switch:before             { content: '\00F9'; }
+.iconStarred-logout:before             { content: '\00F0'; }
+.iconStarred-userProfile:before        { content: '\00F7'; }
+.iconStarred-uploadCloud:before        { content: '\00D1'; }
+
+.iconStarred-phoneOutline:before       { content: '\005C'; }
+.iconStarred-heartOutline:before       { content: '\005F'; }
+.iconStarred-path:before               { content: '\007B'; }
+.iconStarred-userStar:before           { content: '\007D'; }
+.iconStarred-tools:before              { content: '\005B'; }
+.iconStarred-creditcard:before         { content: '\005D'; }
+.iconStarred-notes:before              { content: '\00AB'; }
+.iconStarred-stopwatch:before          { content: '\007C'; }
+.iconStarred-incommingPhoneCal:before  { content: '\00E1'; }
+.iconStarred-mailOutline:before        { content: '\00E2'; }
+.iconStarred-calendarOutline:before    { content: '\00E3'; }
+.iconStarred-keyboard:before           { content: '\00E4'; }
+.iconStarred-clown:before              { content: '\00E5'; }
+.iconStarred-code:before               { content: '\00E7'; }
+.iconStarred-support:before            { content: '\00E8'; }
+.iconStarred-handShake:before          { content: '\00E9'; }
+
+.iconStarred-chart:before              { content: '\011E'; }
+.iconStarred-roller:before             { content: '\0120'; }
+.iconStarred-alarm:before              { content: '\00DE'; }
+.iconStarred-signal:before             { content: '\1E9E'; }
+.iconStarred-office:before             { content: '\00DA'; }
+.iconStarred-secure:before             { content: '\00DB'; }
+.iconStarred-wireframe:before          { content: '\00DC'; }
+.iconStarred-deleteMail:before         { content: '\00D9'; }
+.iconStarred-fileFav:before            { content: '\00DD'; }
+.iconStarred-storeOutline:before       { content: '\00E0'; }
+.iconStarred-radar:before              { content: '\011F'; }
+.iconStarred-plugin:before             { content: '\011D'; }
+.iconStarred-group:before              { content: '\00DF'; }
+.iconStarred-refresh:before            { content: '\0121'; }
+.iconStarred-checkOutline:before       { content: '\0122'; }
+
+.iconStarred-twitter:before            { content: '\013F'; }
+.iconStarred-facebook:before           { content: '\0140'; }
+.iconStarred-bold:before               { content: '\0141'; }
+.iconStarred-italic:before             { content: '\0143'; }
+.iconStarred-ul:before                 { content: '\0145'; }
+.iconStarred-ol:before                 { content: '\0142'; }
+.iconStarred-quot:before               { content: '\0144'; }
+.iconStarred-starredLogo:before        { content: '\006E'; }
+.iconStarred-formEdit:before           { content: '\2150'; }
+.iconStarred-userIcon:before           { content: '\2151'; }
+.iconStarred-statistics:before         { content: '\2152'; }
+.iconStarred-print:before              { content: '\00EE'; }
+.iconStarred-settings:before           { content: '\0126'; }
+
+.iconStarred-abacus:before             { content: '\0119'; }
+.iconStarred-starOutline:before        { content: '\0113'; }
+.iconStarred-like:before               { content: '\0117'; }
+.iconStarred-switchSettings:before     { content: '\0115'; }
+.iconStarred-gauge:before              { content: '\0118'; }
+.iconStarred-chat:before               { content: '\0116'; }
+.iconStarred-smileys:before            { content: '\0114'; }
+.iconStarred-play:before               { content: '\0146'; }
+.iconStarred-enlarge:before            { content: '\0137'; }
+
+.iconStarred-exclam:before             { content: '\350B'; }
+.iconStarred-addingUser:before         { content: '\350C'; }
+.iconStarred-cardInfo:before           { content: '\350D'; }
+.iconStarred-paint:before              { content: '\350E'; }
+.iconStarred-language:before           { content: '\233C'; }
+
+.icon-spin {
+    -webkit-animation:  spin 1s infinite linear;
+    -moz-animation:     spin 1s infinite linear;
+    -o-animation:       spin 1s infinite linear;
+    animation:          spin 1s infinite linear;
+    font-size: @fontSizeExtraLarge;
+    line-height: 26px;
+    color: @white;
+    display: inline-block;
+}
+
+.icon-lg {
+    font-size: 4.000em;
+}
+.icon-md {
+    font-size: 3.000em;
+}
+@-moz-keyframes spin {
+    from      {
+        .box-rotate(0);
+    }
+    to    {
+        .box-rotate(360);
+    }
+}
+
+@-webkit-keyframes spin {
+    from      {
+        .box-rotate(0);
+    }
+    to    {
+        .box-rotate(360);
+    }
+}
+
+@-o-keyframes spin {
+    from      {
+        .box-rotate(0);
+    }
+    to    {
+        .box-rotate(360);
+    }
+}
+
+@-ms-keyframes spin {
+    from      {
+        .box-rotate(0);
+    }
+    to    {
+        .box-rotate(360);
+    }
+}
+
+@-o-keyframes spin {
+    from      {
+        .box-rotate(0);
+    }
+    to    {
+        .box-rotate(360);
+    }
+}
+
+@keyframes spin {
+    from      {
+        .box-rotate(0);
+    }
+    to    {
+        .box-rotate(360);
+    }
+}
+

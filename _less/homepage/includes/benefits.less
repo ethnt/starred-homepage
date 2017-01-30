@@ -1,0 +1,68 @@
+#homepage-benefits-starred {
+
+    header{
+        .header('../images/homepage/benefits/Header', '.jpg', 280px, 90px);
+    }
+
+    h2 .icon-lg {
+        font-size: 2.5em;
+        margin-right: 14px;
+    }
+
+    article {
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        section {
+
+            a.blue {
+                display: block;
+                margin: -5px 0 20px 0;
+            }
+
+        }
+
+    }
+
+    .badget {
+        background: @corporateIdentity;
+        display: inline-block;
+        padding: 3px 4px 2px 4px;
+        font-size: 12px;
+        .rounded(2px);
+        color: @white;
+        margin-left: 10px;
+        border: 1px solid darken(@corporateIdentity, 10%);
+        margin-bottom: -10px;
+    }
+
+    [class*="iconStarred"] { font-size: 42px; }
+
+    @media @phone-sm { h2{ span { display: none; } } }
+
+    .col-tablet-7 img { width: 100%; }
+
+    .mobileView { display: none; }
+    
+    @media @phone-sm, @phone, @tablet {
+        .mobileView { display: inline-block; }
+        .desktopView { display: none; }
+    }
+
+    .background {
+        
+        padding: 30px 0;
+        
+        &.black { background: @mako; }
+        
+        &.lightBlue { padding: 60px 0; background: @catskillWhite;
+            h2 {margin-bottom: 35px; color: @riverBed;}
+        }
+        
+        h2, h3, p { color: @white; }
+        
+        .btn { margin: 0 10px; }
+    }
+
+}

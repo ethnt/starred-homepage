@@ -1,0 +1,243 @@
+<header>
+
+    <div class="backgroundImage"></div>
+
+    <section class="container">
+        <div class="row">
+
+            <div class="col-desktopSmall-8 col-tablet-8 col-phoneSmall-12">
+                <!-- <?= $this->tr->tr('HOMEPAGE_INDEX_HEADER_TITLE'); ?> -->
+                <h1>Increase your client loyalty with the right insights, guaranteed</h1>
+                <!-- <?= $this->tr->tr('HOMEPAGE_INDEX_HEADER_SUBTITLE'); ?> -->
+                <h2>The actionable and customer friendly feedback tool</h2>
+
+                <!-- <?= $this->tr->tr('HOMEPAGE_INDEX_BUTTON_CONTACT'); ?> -->
+                <a class="btn btn-secondary" onclick="$('.contactBanner').slideToggle(); return false;">Get in touch</a>
+                <!-- <?= $this->tr->tr('HOMEPAGE_INDEX_BUTTON_TRIAL'); ?> -->
+                <a class="btn btn-action" href="/<?= $languageCode; ?>/registration/register">Try 30 days for free</a>
+
+    
+
+                <a class="btn desktopView" alt="Starred video" onclick="showVideoPopup(1)">
+                    <span class="iconStarred-play"></span>
+                    <!-- <?= $this->tr->tr('HOMEPAGE_BENEFITS_PROMO_VIDEO'); ?> -->
+                    Promo Video Benefits
+                </a>
+                <!-- @TODO LOCALE CONDITION href="https://www.youtube.com/embed/IACDr9Qj4i0?rel=0&title=&autohide=1&showinfo=0&autoplay=1&wmode=transparent -->
+                <a class="btn mobileView" href="https://www.youtube.com/embed/QOiBw3aThFQ?rel=0&title=&autohide=1&showinfo=0&autoplay=1&wmode=transparent" alt="Starred video" target="_blank">
+                    <span class="iconStarred-play"></span>
+                    <!--  <?= $this->tr->tr('HOMEPAGE_BENEFITS_PROMO_VIDEO'); ?> -->
+                    Promo Video Benefits
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</header>
+
+<article class="container background contactBanner hide">
+
+        <section class="row">
+
+            <div class="col-phoneSmall-12">
+
+                <ul class="horizontal">
+                    <li><a href="tel:+31202610990"><span class="iconStarred-incommingPhoneCal icon-lg"></span> +31 (0) 20 26 10 990</a></li>
+                    <!-- START_CHAT_TEXT -->
+                    <li><a href="javascript:void(0);" onclick="Intercom('showNewMessage');"><span class="iconStarred-keyboard icon-lg"></span> Start chat</a></li>
+                    <!-- PLAN_A_DEMO_TEXT -->
+                    <li><a href="https://calendly.com/lynn-2/" target="_blank"><span class="iconStarred-calendarOutline icon-lg"></span>Plan a demo</a></li>
+                    <li><a href="mailto:support@starred.com"><span class="iconStarred-mailOutline icon-lg"></span> support@starred.com</a></li>
+                </ul>
+
+            </div>
+
+        </section>
+
+    </article>
+
+    <article class="container">
+
+        <section class="row-gutter">
+
+            <div class="col-phoneSmall-12 col-phone-6 col-tablet-4">
+                <!-- HOMEPAGE_INDEX_BENEFITS1_TITLE -->
+                <h3><span class="iconStarred-userStar icon-lg purple"></span> <span>We always put the respondent first</span></h3>
+                <!-- HOMEPAGE_INDEX_BENEFITS1_TEXT -->
+                <p>Feedback is important, but it shouldn’t become a weapon aimed at yourself. At Starred we respect the busy schedule of your clients by asking every question on one single page. This is how we achieve the highest response rates in the market.</p>
+                <!-- HOMEPAGE_INDEX_BUTTON_READ_MORE -->
+                <a class="btn btn-hyperlink" href="">Read more</a>
+            </div>
+
+            <div class="col-phoneSmall-12 col-phone-6 col-tablet-4">
+                <!-- HOMEPAGE_INDEX_BENEFITS2_TITLE -->
+                <h3><span class="iconStarred-path icon-lg greenBlue"></span> <span>Turn insights into action with the right priority</span></h3>
+                <!-- HOMEPAGE_INDEX_BENEFITS2_TEXT -->
+                <p>We offer real-time insights, including the right priority per client group. But of course behind every response is a client with it’s own story. That’s why we offer an extensive tool kit to follow up on feedback personally and scalably. Curious how?</p>
+                <!-- HOMEPAGE_INDEX_BUTTON_READ_MORE -->
+                <a class="btn btn-hyperlink" href="">Read more</a>
+            </div>
+
+            <div class="col-phoneSmall-12 col-tablet-4">
+                <!-- HOMEPAGE_INDEX_BENEFITS3_TITLE -->
+                <h3><span class="iconStarred-tools icon-lg orange"></span> <span>User friendly and affordable software</span></h3>
+                <!-- HOMEPAGE_INDEX_BENEFITS3_TEXT -->
+                <p>We don’t believe in expensive research agencies that deliver big reports and send even bigger invoices. We find that software can do this better and more user friendly. Experience how you can 'get Starred' in 10 minutes and receive your first client feedback</p>
+                <!-- HOMEPAGE_INDEX_BUTTON_READ_MORE -->
+                <a class="btn btn-hyperlink" href="">Read more</a>
+            </div>
+
+        </section>
+
+    </article>
+
+    <article class="container">
+
+        <section class="row">
+
+            <div class="col-phone-12 center-text">
+                <!-- HOMEPAGE_INDEX_TESTIMONIALS_TITLE -->
+                <h2>Starred is the solution for every company</h2>
+                <!-- HOMEPAGE_INDEX_TESTIMONIALS_SUBTITLE -->
+                <p class="noMargin">It doesn’t matter whether your company is small or large, customer satisfaction is our first priority</p>
+
+                <div class="carousel" role="carousel">
+                    <ul class="clean carousel-items">
+                        <li>
+
+                            <img src="{{ site.url }}/images/homepage/index/VARA-BNN.jpg" alt="BNN-VARA">
+
+                            <div>
+                                <!-- TESTIMONIALS_PAGE_VARA_HEADLINE -->
+                                <blockquote>&quot;Vara Headline&quot;</blockquote>
+                                <div class="smallBorder"><hr></div>
+                                <p>Niels Kleverlaan - Marketing Services</p>
+                            </div>
+
+                        </li>
+
+                        <li>
+
+                            <img src="{{ site.url }}/images/homepage/index/Deutsche-post.jpg" alt="Deutsche Post">
+
+                            <div>
+                                <!-- <?= $tr->tr('TESTIMONIALS_PAGE_DEUTSCHE_POST_HEADLINE') ?> -->
+                                <blockquote>&quot;Headline&quot;</blockquote>
+                                <div class="smallBorder"><hr></div>
+                                <p>Susan Perry Whitehead - EU Head of Customer Services</p>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <img src="{{ site.url }}/images/homepage/index/centralpoint.jpg" alt="Central point">
+
+                            <div>
+                                <!-- <?= $tr->tr('TESTIMONIALS_PAGE_CENTRALPOINT_HEADLINE') ?> -->
+                                <blockquote>&quot;Headline&quot;</blockquote>
+                                <div class="smallBorder"><hr></div>
+                                <p>Marcel Joosten - Director Online</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <img src="{{ site.url }}/images/homepage/index/dqna.jpg" alt="DQNA">
+
+                            <div>
+                                <!-- <?= $tr->tr('TESTIMONIALS_PAGE_DQNA_HEADLINE') ?> -->
+                                <blockquote>&quot;Headline&quot;</blockquote>
+                                <div class="smallBorder"><hr></div>
+                                <p>Heleen van Oord - Founder</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <img src="{{ site.url }}/images/homepage/index/Wehkamp.jpg" alt="Wehkamp">
+
+                            <div>
+                                <!-- <?= $tr->tr('TESTIMONIALS_PAGE_WEHKAMP_HEADLINE') ?> -->
+                                <blockquote>&quot;Headline&quot;</blockquote>
+                                <div class="smallBorder"><hr></div>
+                                <p>Maurine Alma - Brand Director</p>
+                            </div>
+                        </li>
+
+                        <li data-link="">
+                            <img src="{{ site.url }}/images/homepage/index/mvo.jpg" alt="MVO Nederland">
+
+                            <div>
+                                <!-- <?= $tr->tr('TESTIMONIALS_PAGE_MVO_HEADLINE') ?> -->
+                                <blockquote>&quot;Headline&quot;</blockquote>
+                                <div class="smallBorder"><hr></div>
+                                <p>Diana Kruft - Eventmanager</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="carousel-nav">
+                        <a href="" class="active" >
+                            <img src="{{ site.url }}/images/homepage/testimonials/bnnvara.png" alt="bnnvara logo" />
+                        </a>
+                        <a href="">
+                            <img src="{{ site.url }}/images/homepage/testimonials/deutschepost.png" alt="deutschepost logo"/>
+                        </a>
+                        <a href="">
+                            <img src="{{ site.url }}/images/homepage/testimonials/centralpoint.png" alt="centralpoint logo"/>
+                        </a>
+                        <a href="">
+                            <img src="{{ site.url }}/images/homepage/testimonials/dqna.png" alt="dqna logo"/>
+                        </a>
+                        
+                        <a href="">
+                            <img src="{{ site.url }}/images/homepage/testimonials/wehkamp.png" alt="wehkamp logo"/>
+                        </a>
+
+                        <a href="">
+                            <img src="{{ site.url }}/images/homepage/testimonials/mvo.png" alt="mvo logo"/>
+                        </a>
+                    </div>
+
+                    <span class="carousel-arrows carousel-arrows-next iconStarred-arrowRight"></span>
+                    <span class="carousel-arrows carousel-arrows-previous iconStarred-arrowLeft"></span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </article>
+
+    <section id="integration-logos" class="container center-text">
+        <!-- HOMEPAGE_INDEX_INTEGRATION_TITLE -->
+        <h2>Endless integrations</h2>
+        <!-- HOMEPAGE_INDEX_INTEGRATION_SUBTITLE -->
+        <p class="noMargin">Automation customer feedback and link your current software in a snap</p>
+        <div class="row">
+            <div class="col-desktopSmall-3" alt="slack logo">
+                <a href="https://slack.com/" target="_blank"><img class="slack" src="{{ site.url }}/images/homepage/logos/slack.png"></a>
+            </div>
+            <div class="col-desktopSmall-3 col-tablet-6 col-phoneSmall-12" alt="salesforce logo">
+                <a href="https://www.salesforce.com/" target="_blank"><img src="{{ site.url }}/images/homepage/logos/salesforce.png"></a>
+            </div>
+            <div class="col-desktopSmall-3 col-tablet-6 col-phoneSmall-12" alt="zapier logo">
+                <a href="https://zapier.com/" target="_blank"><img src="{{ site.url }}/images/homepage/logos/zapier.png"></a>
+            </div>
+            <div class="col-desktopSmall-3 col-tablet-6 col-phoneSmall-12" alt="zendesk logo">
+                <a href="https://www.zendesk.com/" target="_blank"><img class="zendesk" src="{{ site.url }}/images/homepage/logos/zendesk.png"></a>
+            </div>
+        </div>        
+    </section>
+
+    <article class="banner center-text">
+        <!-- HOMEPAGE_INDEX_BANNER_TITLE -->
+        <h2>Ready to try Starred?</h2>
+        <!-- HOMEPAGE_INDEX_TESTIMONIALS_TEXT -->
+        <p>Start a trial or contact us to talk you through the tool</p>
+        <!-- HOMEPAGE_INDEX_BUTTON_CONTACT -->
+        <a class="btn btn-secondary" href="">Get in touch</a>
+        <!-- HOMEPAGE_INDEX_BUTTON_TRIAL -->
+        <a class="btn btn-action" href="">Try 30 days for free</a>
+    </article>

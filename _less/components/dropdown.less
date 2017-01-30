@@ -1,0 +1,56 @@
+.create-dropdown(arrow);
+.create-dropdown(arrowBar);
+.create-dropdown(bar);
+
+.dropdown-menu-parent { /* USED FOR MENU.JS VAR DECLARATION */ }
+.dropdown-menu { /* USED FOR MENU.JS VAR DECLARATION */ }
+
+
+[class*='dropdown-arrow']:not([class*="redactor"]){
+    background: @white;
+    .rounded(3px);
+    text-align: left;
+    .abs();
+    min-width: 160px;
+    float: none;
+    z-index: @zindexDropdown;
+    top: 60px;
+    font-family: @fontFamilyBold;
+    .box-shadow(0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.2));
+
+    ul {
+
+        li{
+
+            padding: 5px 0;
+            margin: 0 !important;
+            width: 100%;
+            .rel();
+
+            a{
+
+                float: none;
+                width: 100% !important;
+                display: inline-block;
+
+                span{
+                    width: 20px;
+                    display: inline-block;
+                    text-align: center;
+                    margin-right: 5px;
+                }
+
+            }
+
+        }
+
+    }
+
+    &.autoCloseSubMenu {
+
+        .abs();
+        top: 0;
+
+    }
+
+}

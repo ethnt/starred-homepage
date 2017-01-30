@@ -1,0 +1,225 @@
+// Hide the facebook, twitter and linkedin pixel.
+// Otherwise there will be a margin between the footer and the content.
+body > img { .abs(); }
+
+#homepage-index-starred {
+
+    overflow-x: hidden;
+
+    header {
+
+        background-color: @mako;
+        padding-bottom: 53px;
+        .rel();
+
+        .desktopView, .mobileView {
+
+            .abs();
+            bottom: 120px;
+            left: 75%;
+            margin-top: 10px;
+            .box-shadow(0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 0px 0px 1px rgba(0, 0, 0, 0.10));
+            .button-size(5px, 16px, @fontSizeNormal, 40px, 24px);
+            .button-variant(@fiord, @white, @white);
+
+            @media @phone { margin-top: 0; }
+
+            span { font-size: @fontSizeHuge; margin-right: 10px; display: block; float: left; margin-top: -2px; }
+
+        }
+
+        @media @tablet, @desktop-sm { .mobileView { display: none; } }
+        @media @phone, @phone-sm {
+            .desktopView { display: none; }
+            .mobileView { position: initial; }
+        }
+
+        @media @phone, @phone-sm { padding-bottom: 10px; text-align: center; margin-top: 0; }
+
+        .backgroundImage {
+
+            .abs();
+            background: url("/images/homepage/index/Header.png") no-repeat;
+            .highResImg('/images/homepage/index/Header@2x.png');
+            left: 60%;
+            bottom: -20px;
+            height: 332px;
+            width: 573px;
+            background-size: auto 100%;
+
+            @media @phone, @phone-sm { display: none; }
+
+        }
+
+        .container {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        h1, h2 { color: @white; }
+
+        h1 {
+            font-size: 2.000em;
+            margin-top: 30px;
+            @media @phone-sm { margin-top: 0; }
+        }
+
+        h2 {
+            font-family: @fontFamilytitleAlt;
+            margin: 20px 0 50px;
+            @media @phone-sm { margin: 20px 0; }
+        }
+
+        .btn { margin: 0 10px 10px 0; }
+        input { width: 220px; }
+
+        form {
+
+            background: @white;
+            display: inline-block;
+            width: auto;
+            padding: 10px;
+            .rounded(3px);
+            .box-shadow(0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.2));
+            input { margin:0 10px 0 0; }
+            button.btn { margin: 0; }
+
+            @media @phone-sm {
+                input { width: 100%; margin: 0 0 10px 0; }
+            }
+
+        }
+
+        @media @phone-sm {
+            .btn { margin: 5px; width: 100%;}
+            input { width: 100%; margin: 5px; }
+        }
+
+    }
+
+    .contactBanner {
+
+        margin-top: 100px;
+        margin-bottom: 30px;
+        text-align: center;
+
+        @media @phone, @phone-sm { .box-shadow(0 0 0 0 rgba(0, 0, 0, 0)); }
+
+        @media @phone, @phone-sm {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .icon-lg { font-size: 3em;}
+
+        ul {
+
+            display: block;
+            margin: -10px auto -8px;
+            width: 100%;
+
+            li {
+
+                width: 25%;
+                @media @phone { width: 33.333%; }
+                @media @phone-sm { width: 100%; }
+
+                &:nth-of-type(2) {
+                    @media @phone, @phone-sm { display: none; }
+                }
+
+                span {
+                    width: 100%;
+                    display: block;
+                }
+
+            }
+
+        }
+
+    }
+
+    .row-gutter {
+        margin-top: 30px;
+    }
+
+    article.banner {
+        background: url('/images/homepage/index/Banner.jpg');
+        .highResImg('/images/homepage/index/Banner@2x.jpg');
+        .coverImg();
+        height: 280px;
+        padding: 80px 0;
+
+        @media @phone-sm {
+            padding: 40px 30px;
+            height: auto;
+            .btn {
+                margin: 10px 0;
+                display: block;
+            }
+        }
+
+        h2, p { color: @white; }
+
+        p { margin: 0 0 20px; }
+        a { margin: 0 10px; }
+    }
+
+    h3 {
+        .clearfix();
+        span {
+            float: left;
+            display: block;
+            width: 76%;
+
+            &:first-child {
+                display: block;
+                margin-top: -20px;
+                margin-bottom: -10px;
+                width: 24%;
+                font-size: 3.5em;
+                @media @phone-sm { width: 65px; }
+            }
+
+            &.orange { @media @phone { width: 65px; } }
+
+        }
+    }
+
+}
+
+#integration-logos {
+
+    margin:60px auto;
+
+    .row {
+
+        display: flex;
+        align-items:center;
+        margin-top:60px;
+
+    }
+
+    img {
+        &.zendesk,&.slack{
+            max-width: 130px;
+            @media (max-width: 768px) {
+              max-width:110px;
+            }
+            @media (max-width: 555px) {
+              max-width:80px;
+            }
+        }
+        max-width:100px;
+        height:auto;
+
+        @media (max-width: 768px) {
+          max-width:80px;
+        }
+        @media (max-width: 555px) {
+          max-width:50px;
+        }
+
+    }
+
+}

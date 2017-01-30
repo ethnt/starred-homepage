@@ -1,0 +1,64 @@
+header.subMenuVertical{
+
+    margin-bottom: -21px;
+
+    hr{
+        margin-top: @gutter;
+        margin-bottom: @gutter;
+    }
+
+}
+
+.subMenuVertical {
+
+    .vertical {
+
+        img {
+            .size(22px, 22px);
+            margin-right: 16px;
+            float: left;
+        }
+
+        b {
+            margin-top: 3px;
+            display: block;
+            float: left;
+            margin-bottom: 22px;
+            width: 175px;
+        }
+
+        .spacing {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        li {
+
+            padding-bottom: 20px;
+
+            a{
+
+                font-size: @fontSizeNormal;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+
+                &.active{
+                    font-family: @fontFamilyLink;
+                    color: @cornflowerBlue;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+#profile-page-starred .subMenuVertical {
+
+
+
+}

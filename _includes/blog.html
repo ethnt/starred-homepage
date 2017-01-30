@@ -1,0 +1,62 @@
+<article id="weblog-overview-starred" class="container">
+            
+    <div class="row">
+
+        <section id="articles" class="col-tablet-12 col-desktopSmall-8">
+
+            {% assign posts = site.posts | where: 'lang', site.lang %}
+
+            {% if posts %}
+                
+                  {% for post in posts %}
+                    <article class="firstArticle">
+                        
+                    <a class="imgwrapper" href="{{ post.url }}" title="{{ post.title }}">
+                        <div style="background: url({{ post.thumbnail }})"></div>
+                    </a>
+
+                    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+
+                    <p class="introtext">{{ post.excerpt }}</p>
+
+                    <a class="blue" href="{{ post.url }}">Read more</a>
+
+                    </article>
+                  {% endfor %}
+
+            {% else  %}
+        
+                <article>
+
+                    <h1>
+                        No articles found
+                        <!-- Geen artikelen gevonden -->
+                    </h1>
+
+                    <p>
+                        There are no articles published in this category yet.
+                        <!-- In deze rubriek zijn nog geen artikelen gepubliceerd. -->
+                    </p>
+
+                    <a href="{{ full_path_lang }}">
+                        Weblog overview »
+                        <!-- Naar het overzicht » -->
+                    </a>
+
+                </article>
+             
+            {% endif %}  
+
+
+        </section>
+
+        <aside class="col-desktopSmall-4 col-tablet-6 col-phone-7 col-phoneSmall-12">
+
+                {% include weblog/widget.html %}
+
+        </aside>
+
+    </div>
+
+</article>
+

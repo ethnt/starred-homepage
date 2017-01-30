@@ -1,0 +1,195 @@
+
+/* testimonials page */
+
+#page-testimonials-starred{
+
+    header{
+        .header('../images/homepage/testimonials/Header', '.jpg', 280px, 90px);
+    }
+
+    a {
+
+        figure:before {
+            content: "";
+            .abs();
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0);
+            .transition();
+        }
+
+        > div {
+
+            overflow: hidden;
+            .rel();
+            .rounded(3px);
+            .box-shadow(0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.2));
+
+            blockquote {
+
+                color: @white;
+                .abs();
+                top: 0;
+                left: 0;
+                height: 200px;
+                text-align: center;
+                padding: 0px 50px;
+                width: 100%;
+                display: table;
+                @media @phone-sm { padding: 0px 20px; }
+
+                span {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+
+            }
+
+            > div {
+
+                text-align: center;
+                background: @white;
+                .abs();
+                bottom: 0;
+                width: 100%;
+
+                h5 {
+                    font-size: @fontSizeExtraLarge;
+                    margin-top: 13px;
+                    .ellipsis();
+                }
+
+                p {
+                    font-family: @fontFamilyBase;
+                    font-size: @fontSizeLarge;
+                    margin: 0 0 14px 0;
+                }
+
+            }
+
+        }
+
+        &:hover {
+
+            > div {.box-shadow(0 0 6px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.2));}
+
+            figure:before {
+                content: "";
+                display: block;
+                .abs();
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+        }
+
+        &.smallArticle figure { height: 210px; @media @tablet, @phone, @phone-sm { height: 270px; div { height: 200px !important; } } }
+        &.largeArticle figure { height: 270px; }
+
+    }
+
+    // List view of testimonials
+    .testimonialList {
+
+        border-right: 1px solid @mercury;
+        border-bottom: 1px solid @mercury;
+        padding: 0 60px;
+        height: 165px;
+        display: table;
+
+        @media @tablet { height: 169px; }
+        @media @phone { padding: 0 45px; }
+
+        @media @desktop-sm { &:nth-of-type(4n) { border-right: 0px; } }
+        @media @tablet { &:nth-of-type(3n) { border-right: 0px; } }
+        @media @phone-sm {
+            border-left: 1px solid @mercury;
+            &:first-child { border-top: 1px solid @mercury; }
+        }
+
+        .hoverContent { display: none; }
+
+        .alignImage {
+
+            display: table-cell;
+            vertical-align: middle;
+
+            img {
+                margin: 0px auto;
+                display: block;
+                max-height: 100px;
+                width: auto;
+                max-width: 119px;
+                @media @tablet { width: 93px; max-height: 120px; }
+                @media @phone { width: 125px; }
+                @media @phone-sm { width: 150px; }
+            }
+
+        }
+
+        &.addHoverEffect:hover {
+
+            padding: 0 30px;
+
+            .alignImage { display: none; }
+
+            .hoverContent {
+
+                text-align: center;
+                height: 100%;
+                display: table;
+                width: 100%;
+
+                div {
+
+                    .box-shadow(0 0 0 0 rgba(0, 0, 0, 0));
+                    border: 0 !important;
+                    display: table-cell;
+                    vertical-align: middle;
+                    height: 100%;
+
+                    p {
+                        margin-top: 0;
+                        font-size: @fontSizeLarge;
+                        font-family: @fontFamilyBase;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    article.banner {
+        background: @catskillWhite;
+        height: 218px;
+        padding: 64px 0;
+
+        &.darkBlue {
+            background: @sanMarino;
+            height: auto;
+            h2, p { color: @white; }
+            p { margin: 0;}
+        }
+
+        @media @phone-sm {
+            .btn {
+                margin: 10px 20px;
+                display: block;
+            }
+        }
+
+        h2{ margin-bottom: 20px; }
+
+        p { margin: 0 0 20px; }
+        a { margin: 0 10px; }
+    }
+
+}

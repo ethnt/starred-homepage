@@ -1,0 +1,11 @@
+global:
+  tagline: test
+langs:
+  en: English
+  nl: Dutch
+titles:
+  home: Home
+  about: About us
+  clients: Clients
+  benefits: Benefits
+  blog: Blog

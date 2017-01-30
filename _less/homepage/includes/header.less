@@ -1,0 +1,38 @@
+.header(@url, @fileType, @height, @verticalAlignment) {
+
+    background: url("@{url}@{fileType}");
+    background-position: center;
+    .highResImg("@{url}@2x@{fileType}");
+    .coverImg();
+    height: @height;
+    text-align: center;
+
+    .container {
+        margin-top: 0;
+    }
+
+    h1, h2 { color: @white; }
+
+    @media @phone-sm, @phone {
+        h1 { font-size: @fontSizeExtraLarge; margin-bottom: 20px; }
+    }
+
+    h1 {
+        padding: @verticalAlignment 110px 0;
+        @media @tablet { padding: 60px 60px 0px; }
+        @media @phone { padding: 60px 40px 0px; }
+        @media @phone-sm { padding: 20px 10px 0; }
+    }
+
+    h2 {
+        width: 70%;
+        font-family: @fontFamilytitleAlt;
+        font-size: @fontSizeH4;
+        display: block;
+        margin: 0 auto 40px;
+        @media @phone-sm { width: 90%; }
+    }
+
+    .btn { margin: 0 10px; }
+
+}

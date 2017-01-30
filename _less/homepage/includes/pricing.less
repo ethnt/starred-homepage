@@ -1,0 +1,279 @@
+#homepage-pricing-starred {
+
+    header {
+
+        .header('../images/homepage/pricing/Header', '.jpg', 280px, 90px);
+
+
+        #pricingControls {
+
+          display: inline-block;
+          margin: -20px auto 0;
+          background: @white;
+          .box-shadow(0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px 0 rgba(0, 0, 0, 0.1));
+          .rounded(3px);
+          .clearfix();
+
+          #periodControl {
+
+              display:inline-block;
+              padding: 9px 24px 0px;
+              float:left;
+              // The toggle can be found in switch.less
+
+              p {
+
+                  float: left;
+                  width: auto;
+                  .opacity(.5);
+                  margin: 0px 0px 10px;
+                  cursor: pointer;
+
+                  &.active { .opacity(1); }
+
+                  span { color: @ecstasy; }
+
+                  &:first-child { float: left; }
+
+              }
+
+          }
+
+          #currencyControl {
+
+            float:left;
+            line-height:41px;
+            display: inline-block;
+            padding: 0px 24px;
+            font-family: @baseFontFamily;
+            font-size:12px;
+            border-left: 1px solid #D8D8D8;
+
+            label{
+              display:inline-block;
+              font-size:12px;
+              margin:0;
+              margin-left: -4px;
+              &:not(:last-of-type){
+                margin-right:16px;
+              }
+            }
+
+            input[type="radio"]:checked + label {
+              font-weight: bold;
+            }
+          }
+      }
+    }
+
+    .plans {
+
+        margin-top: -40px;
+
+        section {
+
+            text-align: center;
+
+            > div {
+
+                .box-shadow(0 0 0 1px rgba(0, 0, 0, 0.05), 0 0 2px 0 rgba(0, 0, 0, 0.1));
+                background: @white;
+                padding: 20px 10px;
+
+                @media @desktop-sm {
+                    &.plan-1 { .rounded(3px 0 0 3px); }
+                    &.plan-3 { .rounded(0 3px 3px 0); }
+                    &.plan-4 {
+                        .box-shadow(0 0 0 0px rgba(0, 0, 0, 0), 0 0 0px 0 rgba(0, 0, 0, 0));
+                        background: transparent;
+                        .btn:first-child { margin-top: -3px; }
+                        > div {
+                            .rounded(3px);
+                            .box-shadow(0 0 0 1px rgba(0, 0, 0, 0.05), 0 0 2px 0 rgba(0, 0, 0, 0.1));
+                            background: @white;
+                            margin: -20px -10px 0px 10px;
+                            padding: 20px 10px;
+                        }
+                    }
+                    &.plan-5 {
+                        .box-shadow(0 0 0 0px rgba(0, 0, 0, 0), 0 0 0px 0 rgba(0, 0, 0, 0));
+                        background: transparent;
+                        .btn:first-child { margin-top: -3px; }
+                        > div {
+                            .rounded(3px);
+                            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.1), inset 0 3px 0 0 #559ae7;
+                            background: @white;
+                            margin: -20px -10px 0px 10px;
+                            padding: 20px 10px;
+
+                            >a {
+                                color: #53a6fb;
+                            }
+                        }
+
+                    }
+
+                    &.vat {
+                        padding-top: 2px;
+                        box-shadow: none;
+                        background: transparent;
+                        .btn:first-child { margin-top: -3px; }
+                        > div {
+                            background: @white;
+                            margin: -20px -10px 0px 10px;
+                            padding: 20px 10px;
+                        }
+
+                    }
+
+                }
+
+                @media @phone-sm, @phone, @tablet {
+                    .rounded(3px);
+                }
+
+                h4 {
+                    font-family: @fontFamilyException;
+                    color: @mangoTango;
+                    margin: 20px 0 5px;
+
+                    .month {
+                        color: @tundora;
+                        font-size: @fontSizeSmall;
+                    }
+                }
+
+                ul {
+                    margin: 10px 0;
+                    li {
+                        font-size: @fontSizeNormal;
+                        padding: 2px 0px 3px;
+                        cursor: default;
+                        &.unavailable { text-decoration: line-through; color: @silver;}
+                    }
+                }
+
+                .btn {
+                    margin: 20px 0;
+                }
+
+            }
+
+            small { font-size: @fontSizeMedium; }
+
+        }
+
+    }
+
+    .all-plans {
+
+        section.row {
+
+            div.col-desktopSmall-12 {
+
+                li {
+
+                    margin-bottom: 0px;
+
+                }
+
+            }
+
+        }
+
+        ul {
+
+            .clean;
+            @media @phone    { margin: 0; padding: 0; }
+            @media @phone-sm { margin: 0; padding: 0; }
+
+            li {
+                font-size: @fontSizeNormal;
+                margin: 5px 0 10px 0;
+                padding: 0 10px;
+                width: 33.33%;
+                float: left;
+                @media @phone    { width: 50%; }
+                @media @phone-sm { width: 100%; }
+
+                &:before {
+                    &:extend(.iconStarred-checkOutline:before);
+                    color: @corporateIdentity;
+                    margin-right: 11px;
+                    font-size: @fontSizeExtraLarge;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 10px 0 0 26px;
+                }
+
+            }
+
+        }
+
+        .col-tablet-4 {
+            @media @phone {
+                min-height: 230px;
+            }
+        }
+
+    }
+
+    h2 { margin-bottom: 30px; }
+
+    .background {
+
+        padding: 30px 0;
+
+        &.grayBlack { background: @mako; }
+
+        h2 { margin-bottom: 0; }
+
+        h2, p, li, a { color: @white; }
+
+        ul {
+
+            display: block;
+            margin: 20px auto 0;
+            width: 100%;
+
+            li {
+
+                width: 25%;
+                @media @phone { width: 33.333%; }
+                @media @phone-sm { width: 100%; }
+
+                &:nth-of-type(2) {
+                    @media @phone, @phone-sm { display: none; }
+                }
+
+                span {
+                    width: 100%;
+                    display: block;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.lt-ie9 #homepage-pricing-starred .plans section > div {
+    &.plan-1 { .rounded(3px 0 0 3px); }
+    &.plan-3 { .rounded(0 3px 3px 0); }
+    &.plan-4 {
+        .box-shadow(0 0 0 0px rgba(0, 0, 0, 0), 0 0 0px 0 rgba(0, 0, 0, 0));
+        background: transparent;
+        > div {
+            .rounded(3px);
+            .box-shadow(0 0 0 1px rgba(0, 0, 0, 0.05), 0 0 2px 0 rgba(0, 0, 0, 0.1));
+            background: @white;
+            margin: -20px -10px 0 10px;
+            padding: 10px;
+        }
+
+    }
+}

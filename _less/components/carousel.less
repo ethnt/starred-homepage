@@ -1,0 +1,159 @@
+// Make general styling
+.carousel {
+
+    .rel();
+    margin: 30px 0 0 0;
+
+    @media @phone, @phone-sm, @tablet { display: none; }
+
+    .carousel-items {
+
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+        .rel();
+        list-style: none outside none;
+        padding: 0;
+        margin: 0;
+
+        &.pe {
+            
+            cursor: pointer;
+
+            li {
+
+                cursor: pointer;
+
+            }
+
+        }
+
+        li{
+
+            .abs();
+            top: 0px;
+            left: 0px;
+            display: none;
+            width: 100%;
+            height: 100%;
+
+            &:first-child{
+                display: block;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                .rounded(3px);
+            }
+
+            > div{
+
+                .abs();
+                top: 180px;
+                left: 50%;
+                width: 46%;
+                margin-left: calc(46% / -2);
+                color: @white;
+
+                blockquote {
+                    margin: 0 0 20px 0;
+                    font-size: @fontSizeLarge;
+                }
+
+                .smallBorder {
+                    width: 60px;
+                    left: 50%;
+                    bottom: 29px;
+                    margin-left: -30px;
+                    .abs();
+                    hr { border-color: @white;}
+                }
+
+            }
+
+        }
+
+    }
+
+    .carousel-arrows {
+        .abs();
+        top: 160px;
+        color: @white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .carousel-arrows-previous {
+        display: none;
+        left: 20px;
+    }
+    .carousel-arrows-next {
+        display: none;
+        right: 20px;
+    }
+
+    .carousel-nav {
+
+        margin: 40px auto 20px;
+        display: inline-block;
+        .clearfix();
+
+        a {
+
+            float: left;
+            margin: 0  0 0 56px;
+            cursor: pointer;
+
+            &:first-child {
+
+                margin: 0;
+            }
+
+            &.active { 
+
+                img {
+
+                    .grayScale(0); .opacity(1); 
+
+                }
+
+            }
+
+            img {
+
+                width: 110px;
+                height: auto;
+                /*max-width: 132px;
+                max-height: 40px;*/
+                .grayScale(1);
+                .opacity(0.4);
+
+            }
+
+        }
+
+        div {
+
+            .rounded(50%);
+            background: rgba(0, 0, 0, 0.03);
+            .box-shadow(inset 0 0 0 1px rgba(0, 0, 0, 0.25), inset 0 1px 3px 0 rgba(0, 0, 0, 0.1));
+            .size(12px, 12px);
+            float: left;
+            .rel();
+            cursor: pointer;
+            margin: 0 10px;
+
+            &.active {
+                background: rgba(0, 0, 0, 0.6);
+            }
+
+        }
+
+    }
+
+}
+
+.lt-ie9 .carousel li .text {
+    margin-left: -216px;
+}

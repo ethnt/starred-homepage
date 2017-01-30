@@ -1,0 +1,211 @@
+// forms reset.
+form {margin:0;}
+fieldset {border:0; margin:0; padding:0;}
+
+label {
+
+    margin: 0 10px 10px 0;
+    font-family: @fontFamilyLabel;
+    font-size: @fontSizeNormal;
+    display: block;
+    cursor: pointer;
+
+    a { font-size: @fontSizeLarge;}
+
+}
+
+a:link { outline: 0; }
+
+input, select, textarea {
+    font-family: @fontFamilyBase;
+    font-size: @fontSizeNormal;
+    vertical-align:baseline;
+    *vertical-align:middle;
+    outline: none;
+    color: @tundora;
+    .rounded(2px);
+    margin: 0px 10px 10px 0px;
+    padding: 9px 14px;
+    height: 36px;
+    background: @white;
+    .box-shadow(inset 0px 1px 2px 0px rgba(0, 0, 0, 0.10));
+    border: 1px solid @silver;
+
+    &:focus{
+        border: 1px solid @cornflowerBlue;
+        outline: none;
+        background: @white;
+        .rounded(2px);
+    }
+
+    &:disabled, .uneditable-input:disabled, input[disabled]{
+        cursor: not-allowed;
+        color: darken(@silver, 14%);
+        background: @white;
+        border: 1px solid @silver;
+    }
+
+    &.black {
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+        color: @white;
+    }
+
+}
+
+/*
+ * Focussed form elements
+ */
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="search"]:focus,
+input[type="url"]:focus, input[type="tel"]:focus, input[type="number"]:focus, select:focus, textarea:focus {
+    border: 1px solid @cornflowerBlue;
+    .box-shadow(0 0 0 0 rgba(0,0,0,0));
+    outline: none;
+    background: @white;
+    .rounded(2px);
+}
+
+input[type="file"] {
+    .box-shadow(inset 0px 0px 0px 0px rgba(0, 0, 0, 0), inset 0px 0px 0px 0px rgba(0, 0, 0, 0));
+}
+
+textarea.error, textarea:invalid,
+select.error, select:invalid,
+input.error, input:invalid { border: 1px solid @burnSienna; .box-shadow(0 0 0 0 rgba(0,0,0,0)); }
+
+span.inputSmall {
+    margin: 10px 0px 15px;
+    display: block;
+
+    font-size: @fontSizeNormal;
+    label { font-family: @fontFamilyBase;
+        a { font-family: @fontFamilyBase; text-decoration: underline;} }
+    input {float: left; margin: 0 10px 0 0;}
+}
+
+/*
+ * Consistent box sizing and appearance
+ */
+input[type="checkbox"],
+input[type="radio"] {
+    padding: 0;
+    border: 0;
+    width: auto;
+    height: auto;
+
+    &:disabled{ cursor: not-allowed; }
+}
+
+/*
+ * Placeholder styling
+ */
+textarea::-moz-placeholder, input::-moz-placeholder { color: @dustyGray; }
+input.black::-moz-placeholder { color: @white; }
+
+textarea::-webkit-input-placeholder, input::-webkit-input-placeholder { color: @dustyGray; }
+input.black::-webkit-input-placeholder { color: @white; }
+
+textarea:-ms-input-placeholder, input:-ms-input-placeholder { color: @dustyGray; }
+input.black:-ms-input-placeholder { color: @white; }
+
+fieldset {
+    width: 50%;
+    float: left;
+
+    &:first-child { padding-right: 20px;}
+
+    @media @phone-sm {
+        width: 100%;
+        &:first-child { padding-right: 0; }
+    }
+
+    input, select {
+        width: 100%;
+        height: 38px;
+        padding: 4px 14px;
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 200px;
+        padding: 8px 14px;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+.custom-select{
+
+    .rel();
+    border: 1px solid @silver;
+    .rounded(3px);
+    background-clip: padding-box;
+    background-color: @white;
+    display:inline-block;
+    .box-shadow(inset 0px 1px 2px 0px rgba(0, 0, 0, 0.10));
+    cursor: pointer;
+
+    &.disabled {
+        border: 1px dashed @silver;
+        box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+    .arrow{
+        .abs();
+        top: 8px;
+        right: 12px;
+        display: block;
+
+        &:before { &:extend(.iconStarred-pulldown:before); }
+    }
+
+    select {
+        float: left;
+        .rel();
+        display: block;
+        margin: 0;
+        height: 36px;
+        -moz-appearance: window;
+        background: transparent;
+        border: none;
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        padding: 4px 30px 3px 11px;
+        font-size: @fontSizeNormal;
+
+        &:focus, &:active { outline: none; }
+
+    }
+    &:focus, &:active { outline: none; }
+
+    &.black {
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+        select{color: @white; box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.0);}
+        .arrow { border-color: @white transparent; }
+    }
+
+}
+
+
+
+#errorMessage, .errorMessage{
+    background-color: lighten(@chestnutRose, 35%);
+    width: 100%;
+    padding: 20px;
+    .rounded(2px);
+    border: 1px solid lighten(@chestnutRose, 20%);
+    color: @chestnutRose;
+    margin-bottom: 20px;
+
+    p{
+        margin:0;
+        font-weight: bold;
+    }
+
+}

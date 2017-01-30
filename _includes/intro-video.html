@@ -1,0 +1,48 @@
+<script>
+
+    $('document').ready(function() {
+
+        /**
+         * Show video popup
+         *
+         * @returns {undefined}
+         */
+        showVideoPopup = function (nl) {
+
+            if(nl){
+                // Define source
+                var src = 'https://www.youtube.com/embed/QOiBw3aThFQ?rel=0&title=&autohide=1&showinfo=0&autoplay=1&wmode=transparent';
+            } else {
+                // Define source
+                var src = 'https://www.youtube.com/embed/IACDr9Qj4i0?rel=0&title=&autohide=1&showinfo=0&autoplay=1&wmode=transparent';
+            }
+
+            // Set source
+            document.getElementById('videoIframe').setAttribute('src', src);
+
+            // Toggle video popup
+            videoPopup.toggle();
+
+            // Log event
+            logEvent('Homepage', 'Watch video', false);
+
+        };
+
+        // Video popup
+        var videoPopup = new Popup();
+        videoPopup.create(
+            'videoPopup',
+            {
+                "contents": '<p style="text-align: center; width: 100%;"><iframe id="videoIframe" width="824" height="464" src="" frameborder="0"></iframe></p>',
+                "onClose": function () {
+
+                    // Clear source
+                    document.getElementById('videoIframe').setAttribute('src', '');
+
+                }
+            }
+        );
+
+    });
+
+</script>

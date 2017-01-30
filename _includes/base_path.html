@@ -1,0 +1,12 @@
+{% capture site_url %}{{ site.url }}/{% endcapture %}
+
+{% if site.lang == "en" %}
+  {% capture base_path_home %}{{ site_url }}{% endcapture %}
+  {% capture full_path_lang %}{{ site_url }}{{ page.url }}{% endcapture %}
+{% elsif site.lang == "nl" %}
+  {% capture base_path_home %}{{ site_url }}{{ site.lang }}{% endcapture %}
+  {% capture full_path_lang %}{{ site_url }}{{ site.lang }}{{ page.url }}{% endcapture %}
+{% endif %}
+
+{% capture switch_lang_en %}{{ site.url }}{{ page.url }}{% endcapture %}
+{% capture switch_lang_nl %}{{ site_url }}nl{{ page.url }}{% endcapture %}

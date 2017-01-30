@@ -1,0 +1,136 @@
+@mixins: "mixins/";
+@modules: "modules/";
+@homepage: "homepage/";
+@includes: "homepage/includes/";
+@blog: "homepage/includes/blog/";
+@testimonials: "homepage/includes/testimonials/";
+@careers: "homepage/includes/careers/";
+@docs: "homepage/includes/docs/";
+@register: "homepage/includes/register/";
+@components: "components/";
+@componentMixins: "components/mixins/";
+
+/*
+ * Include fonts & externals
+ */
+
+@import 'fonts_homepage.css';
+@import 'external/jquery.nouislider/nouislider.fox.css';
+
+/*
+ *
+ * Include all mixins
+ *
+*/
+
+@import "@{mixins}buttons";
+@import "@{mixins}grid";
+@import "@{mixins}clearfix";
+@import "@{mixins}center-block";
+@import "@{mixins}ellipsis";
+@import "@{mixins}round-corners";
+@import "@{mixins}tagLabel";
+@import "@{mixins}size";
+@import "@{mixins}mixins";
+@import "@{mixins}stickyFooter";
+@import "@{mixins}transitions";
+
+
+/*
+ *
+ * Include all css that is used both on homepage and platform
+ *
+*/
+
+@import "@{modules}normalize";
+@import "@{modules}coloredIcons";
+@import "@{modules}floats";
+@import "@{modules}helpers";
+@import "@{modules}hideClasses";
+@import "@{modules}icons";
+@import "@{modules}loader";
+@import "@{modules}popup";
+@import "@{modules}profileImg";
+@import "@{modules}subMenuVertical";
+@import "@{modules}tagHelper";
+@import "@{modules}switch";
+@import "@{modules}colorVariables";
+@import "@{modules}blockedBrowsers";
+@import "@{modules}table";
+
+/*
+ *
+ * Include all styling that is used throughout the homepage
+ *
+*/
+
+@import "@{homepage}variables";
+@import "@{homepage}buttons";
+@import "@{homepage}forms";
+@import "@{homepage}homepageMenu";
+@import "@{homepage}fonts";
+@import "@{homepage}grid";
+@import "@{homepage}stickyFooter";
+@import "@{homepage}footer";
+@import "@{homepage}login";
+@import "@{homepage}breadcrumbs";
+@import "@{homepage}cookieBar";
+
+/*
+ *
+ * Include single pages off the homepage
+ *
+*/
+
+@import "@{includes}homepage";
+@import "@{includes}benefits";
+@import "@{includes}register";
+@import "@{includes}featureList";
+@import "@{includes}pricing";
+@import "@{includes}header";
+@import "@{includes}contact";
+@import "@{includes}privacy";
+@import "@{includes}resetPassword";
+@import "@{includes}registerThanks";
+@import "@{includes}contactThanks";
+@import "@{blog}overview";
+@import "@{blog}sidebar";
+@import "@{blog}singleView";
+@import "@{blog}search";
+@import "@{testimonials}testimonials";
+@import "@{testimonials}testimonialSingle";
+@import "@{careers}careers";
+@import "@{careers}position";
+@import "@{careers}applicationSent";
+@import "@{register}register";
+@import "@{modules}print";
+
+/*
+ *
+ * Include single pages off the homepage
+ *
+*/
+
+@import "@{docs}index";
+
+
+/*
+ *
+ * Include all component mixins
+ *
+*/
+
+@import "@{componentMixins}dropdown";
+
+/*
+ *
+ * Include all component styles
+ *
+*/
+
+@import "@{components}dropdown";
+@import "@{components}carousel";
+@import "@{components}flashmessage";
+@import "@{components}hover";
+@import "@{components}popup";
+
