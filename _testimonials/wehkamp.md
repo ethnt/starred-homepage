@@ -1,22 +1,23 @@
 ---
+title: Wehkamp
+date: 2016-01-12 00:00:00 +01:00
+categories:
+- testimonials
+position: 3
 layout: testimonial
-category: testimonials
-
-title: 
-date: "2016-01-12"
 companyName: Wehkamp
 author: Maurine Alma
-authorImage: ""
+authorImage: ''
 role: Brand Director
-position: 3
-headerImage: ""
+headerImage: ''
 companyLogo: "/images/homepage/testimonials/wehkamp.png"
-userImage:
-published: true
-industry: ['Retail']
-clients: ['B2C']
+userImage: 
+industry:
+- Retail
+clients:
+- B2C
 headline: testimonials.wehkamp_headline
-text:
+text: 
 carouselImage: "/images/homepage/index/Wehkamp.jpg"
 carousel: true
 carouselposition: 5

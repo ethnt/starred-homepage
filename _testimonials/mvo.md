@@ -1,22 +1,23 @@
 ---
+title: Mvo
+date: 2016-01-12 00:00:00 +01:00
+published: false
+categories:
+- testimonials
 layout: testimonial
-category: testimonials
-
-title: 
-date: "2016-01-12"
 companyName: MVO Nederland
 author: Diana Kruft
-authorImage: ""
+authorImage: ''
 role: Eventmanager
-position:
-headerImage: ""
+headerImage: ''
 companyLogo: "/images/homepage/testimonials/mvo.png"
-userImage:
-published: false
-industry: ['Retail']
-clients: ['B2C']
+userImage: 
+industry:
+- Retail
+clients:
+- B2C
 headline: testimonials.mvo_headline
-text:
+text: 
 carouselImage: "/images/homepage/index/mvo.jpg"
 carousel: true
 carouselposition: 6

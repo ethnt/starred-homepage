@@ -1,23 +1,24 @@
 ---
+title: De_buurtboer
+date: 2016-01-12 00:00:00 +01:00
+categories:
+- testimonials
+position: 5
 layout: testimonial
-category: testimonials
-
-title:
-date: "2016-01-12"
 companyName: De Buurtboer
 author: 
-authorImage: ""
+authorImage: ''
 role: 
-position: 5
-headerImage: ""
-companyLogo: ""
-userImage:
-published: true
-industry: ['']
-clients: ['']
+headerImage: ''
+companyLogo: ''
+userImage: 
+industry:
+- ''
+clients:
+- ''
 headline: 
-text:
-carouselImage: ""
+text: 
+carouselImage: ''
 carousel: false
 carouselposition: 
 ---

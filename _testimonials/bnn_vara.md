@@ -1,22 +1,22 @@
 ---
+title: Bnn_vara
+date: 2016-01-12 00:00:00 +01:00
+categories:
+- testimonials
 layout: testimonial
-category: testimonials
-
-title:
-date: "2016-01-12"
 companyName: BNN VARA
 author: Niels Kleverlaan
-authorImage: ""
+authorImage: ''
 role: Marketing Services
-position:
 headerImage: "/files/testimonialHeaderImages/BNNVARA.jpg"
 companyLogo: "/images/homepage/testimonials/bnnvara.png"
-userImage:
-published: true
-industry: ['Media']
-clients: ['B2C']
+userImage: 
+industry:
+- Media
+clients:
+- B2C
 headline: testimonials.vara_headline
-text:
+text: 
 carouselImage: "/images/homepage/index/VARA-BNN.jpg"
 carousel: true
 carouselposition: 1

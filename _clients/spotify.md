@@ -1,11 +1,12 @@
 ---
+title: Spotify
+categories:
+- clients
 layout: clients
-category: clients
-
 company: Spotify
 logo: "/images/clients/spotify.png"
-pages: [nl,en]
-position: 
-
+pages:
+- nl
+- en
 ---
 

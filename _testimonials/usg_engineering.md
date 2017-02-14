@@ -1,23 +1,24 @@
 ---
+title: Usg_engineering
+date: 2016-01-12 00:00:00 +01:00
+categories:
+- testimonials
+position: 3
 layout: testimonial
-category: testimonials
-
-title: 
-date: "2016-01-12"
 companyName: USG Engineering
 author: 
-authorImage: ""
+authorImage: ''
 role: 
-position: 3
-headerImage: ""
-companyLogo: ""
-userImage:
-published: true
-industry: ['']
-clients: ['']
+headerImage: ''
+companyLogo: ''
+userImage: 
+industry:
+- ''
+clients:
+- ''
 headline: 
-text:
-carouselImage: ""
+text: 
+carouselImage: ''
 carousel: false
 carouselposition: 5
 ---

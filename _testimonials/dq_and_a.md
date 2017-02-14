@@ -1,22 +1,22 @@
 ---
+title: Dq_and_a
+date: 2016-01-12 00:00:00 +01:00
+categories:
+- testimonials
 layout: testimonial
-category: testimonials
-
-title:
-date: "2016-01-12"
 companyName: DQ&A
 author: Heleen van Oord
-authorImage: ""
+authorImage: ''
 role: Founder
-position:
-headerImage: ""
+headerImage: ''
 companyLogo: "/images/homepage/testimonials/dqna.png"
-userImage:
-published: true
-industry: ['Advertising']
-clients: ['B2B']
+userImage: 
+industry:
+- Advertising
+clients:
+- B2B
 headline: testimonials.dqna_headline
-text:
+text: 
 carouselImage: "/images/homepage/index/dqna.jpg"
 carousel: true
 carouselposition: 4

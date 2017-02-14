@@ -1,15 +1,16 @@
 ---
+title: 10 New Year’s resolutions in customer feedback for 2017
+date: 2017-01-26 00:00:00 +01:00
 layout: post
-title:  "10 New Year’s resolutions in customer feedback for 2017"
-date:   2017-01-26
 author: Lars van Wieren
-published: true
 thumbnail: "/images/blog/new-year.jpeg"
-categories: [Customer Happines, Working At Starred]
+categories:
+- Customer Happines
+- Working At Starred
 tags:
-  - Customers
-  - Happiness
-excerpt_separator: <!--more-->
+- Customers
+- Happiness
+excerpt_separator: "<!--more-->"
 ---
 
 New Year’s resolutions. More and more these will extend to work and business life. We therefore make the prediction, unsurprisingly, that a lot of companies will have ‘listening more to customers’ needs’ high on their lists.
