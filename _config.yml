@@ -22,8 +22,8 @@ collections:
     title: Uploads
     output: true
 email: support@starred.com
-baseurl: ''
-url: ''
+baseurl: 
+url: 
 twitter_username: jekyllrb
 github_username: jekyll
 languages:
