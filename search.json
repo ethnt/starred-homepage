@@ -1,6 +1,0 @@
-[
-{% for item in site.categories limit:200 %}
-  {% include post.json %},
-{% endfor %}
-false
-]
