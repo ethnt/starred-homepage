@@ -1,0 +1,202 @@
+#weblog-article-starred {
+
+    // new styleguide for blog pages
+    h1 { font-size: 1.500em; line-height: 32px; }
+    p, a { font-size: 1.000em; }
+    p { line-height: 24px; }
+    a.blue { font-size: 0.875em; }
+
+    #weblogContent {
+
+        min-height: 695px;
+
+        // Faking paraghraph styling, and make the link appear blue again
+        a { color: @shakespeare; }
+        h3 { margin: 16px 0; }
+        h4 { margin: 17px 0 3px; }
+
+        .datetime {
+
+            margin: 8px 0px 7px 0px;
+
+            time {
+                font-size: @fontSizeNormal;
+                color: @dustyGray;
+            }
+
+        }
+
+        .weblogSocialShareButtons { height: 30px; }
+
+        .articleComments { margin-top: 30px; }
+
+        .articleText { overflow-wrap: break-word; }
+
+        .imgwrapper {
+
+            overflow: hidden;
+            .rounded(3px);
+            margin-bottom: 39px;
+
+            img {
+                .rounded(3px);
+                padding: 0;
+                border: 0px;
+            }
+
+
+
+        }
+
+        p a { color: @shakespeare; }
+
+        h3 { font-size: 1.375em; }
+
+        h4 { font-size: 1.000em; }
+
+        img { max-width: 100%; }
+
+        blockquote {
+
+            margin: 40px 0;
+            color: @corporateIdentity;
+            border-left: 4px solid @corporateIdentity;
+            padding-left: 20px;
+            font-size: 1.250em;
+
+            &:before, &:after { content: "\0022"; }
+
+        }
+
+        ul li { margin: 15px 0; }
+
+        img {
+            .imageFrame;
+            padding: @gutter;
+            max-width: 100%;
+            width: auto;
+            margin: 0 auto;
+        }
+
+        a img {
+            border: 0px;
+            padding: 0;
+            .rounded(3px);
+            margin: 0;
+        }
+
+    }
+
+    #relatedArticles {
+
+        h3 { margin: 49px 0px 12px; }
+        h4 { font-family: @fontFamilyException; }
+
+        .imgwrapper {
+
+            overflow: hidden;
+            display: block;
+            height: 140px;
+            .rounded(3px);
+            .transition();
+
+            &:hover div { height: 110%; margin-top: -2.5%; }
+
+            div {
+                height: 100%;
+                .rounded(3px);
+            }
+
+        }
+
+    }
+
+    .btn-special {
+        margin: 20px 0;
+    }
+
+}
+
+.newsletterBanner {
+
+    background: @seagull;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: @zindexFixedNavbar;
+
+    .container {
+
+        margin-top: 0;
+        margin-bottom: 0;
+
+        .content {
+
+            .rel();
+            float: left;
+
+            @media @phone {
+                text-align: center;
+                float: none;
+            }
+
+            span {
+                .abs();
+                left: 10px;
+                top: 50%;
+                font-size: 18px;
+                color: rgba(255, 255, 255, 0.8);
+                margin-top: -13px;
+            }
+
+            p {
+                color: @white;
+                padding-left: 40px;
+                @media @phone { padding-left: 0; }
+            }
+
+        }
+
+        .signUp {
+
+            @media @phone {
+                text-align: center;
+                float: none;
+            }
+
+            input {
+
+                @media @phone-sm { width: 100%; }
+
+                &.btn {
+                    margin: 0;
+                    float: right;
+                    .box-shadow(0px 1px 2px 0px rgba(0,0,0,0.2));
+                    @media @phone, @phone-sm { float: none; }
+                }
+
+                &.email {
+
+                    margin: 0 0px 10px 0;
+                    background: rgba(0, 0, 0, 0.30);
+                    border: 1px solid darken(@seagull, 30%);
+                    color: @white;
+                    @media @desktop-sm { width: 57%; }
+                    @media @tablet { width: 160px; }
+                    &::-moz-placeholder          {color: @white;}
+                    &::-webkit-input-placeholder {color: @white;}
+                    &:-ms-input-placeholder      {color: @white;}
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.newsletterBannerSpacer {
+    height: 86px;
+    @media @phone { height: 150px; }
+    @media @phone-sm { height: 186px; }
+}

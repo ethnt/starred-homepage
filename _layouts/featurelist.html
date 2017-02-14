@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main role="main" id="homepage-featureList-starred">
+
+      <header>
+          <h1>{% t features.title %}</h1>
+          <h2>{% t features.subtitle %}</h2>
+      </header>
+
+      <article class="container">
+      
+          <section class="row">
+
+              {% include featurelist/navigation.html %}
+
+              {{ content }}
+      
+          </section>
+      
+      </article>
+    
+    </main>
+
+    {% include footer.html %}
+    
+  </body>
+
+</html>

@@ -1,0 +1,149 @@
+#page-testimonial-singleView-starred {
+
+    header {
+
+        height: 280px;
+        .rel();
+        text-align: center;
+
+        h1, h2 { color: @white; }
+
+        h1 {
+            padding: 90px 110px 0;
+            @media @tablet { padding: 60px 60px 0px; }
+            @media @phone { padding: 60px 40px 0px; }
+            @media @phone-sm { padding: 20px 10px 0; }
+        }
+
+        h2 {
+            width: 70%;
+            font-family: @fontFamilytitleAlt;
+            font-size: @fontSizeH4;
+            display: block;
+            margin: 0 auto 40px;
+            
+            @media @phone-sm { width: 90%; }
+
+        }
+
+        div {
+            z-index: -1;
+            .abs();
+            top:0;
+        }
+
+    }
+
+    .content {
+
+        font-size: @fontSizeLarge;
+        line-height: 24px;
+        margin-top: -14px;
+
+        p {
+            font-size: @fontSizeLarge;
+            line-height: 24px;
+        }
+
+        h3, h4 { margin: 16px 0; font-size: @fontSizeLarge;}
+        blockquote { margin: 40px 0;}
+
+        img {
+            max-width: 100%;
+            .imageFrame;
+        }
+
+        a img {
+            border: 0px;
+            background: transparent;
+            width: auto;
+            max-width: 100%;
+            padding: 0;
+            .rounded(0);
+        }
+
+    }
+
+
+    .banner {
+
+        .rounded(3px);
+        background: @catskillWhite;
+        padding: 30px 20px;
+        margin: 40px 0;
+        h3 {
+            margin:0;
+        }
+
+        a { margin: 15px 10px 0; }
+
+    }
+
+    hr { margin: 10px 0 40px; }
+
+    .moreStories {
+
+        border: 1px solid @mercury;
+        .rounded(3px);
+        display: block;
+        .clearfix();
+        overflow: hidden;
+        height: 120px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+        &:hover {
+
+            p.noMargin { text-decoration: underline; }
+
+        }
+
+        figure{
+
+            width: 50%;
+            height: 100%;
+            float: left;
+            margin-right: 20px;
+
+            @media @tablet   { width: 40%; }
+            @media @phone-sm { width: 25%; }
+
+        }
+
+        p.noMargin {
+
+            color: @shakespeare;
+            font-size: @fontSizeLarge;
+            font-family: @fontFamilyLink;
+            margin: 0;
+
+        }
+
+        h3 { margin-top: 20px; font-size: @fontSizeExtraLarge; }
+
+        p {
+
+            font-size: @fontSizeExtraLarge;
+            font-family: @fontFamilyBase;
+            color: @tundora;
+            margin: 10px 0px;
+
+        }
+
+    }
+
+    aside {
+
+        padding-left: 30px;
+
+        p { margin: 0; }
+        h3 { margin-top: 20px; }
+
+        img {
+            margin-top: 20px;
+            &:first-child { margin-bottom: 0; margin-top: 0; }
+        }
+
+    }
+
+}

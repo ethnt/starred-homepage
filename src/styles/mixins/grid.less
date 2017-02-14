@@ -1,0 +1,73 @@
+
+
+.make-container(@gutter) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: @gutter;
+    margin-bottom: @gutter;
+    padding-left:  (@gutter); // normally it's @gutter / 2
+    padding-right: (@gutter); // normally it's @gutter / 2
+    padding-top:  (@gutter / 2);
+    padding-bottom: (@gutter / 2);
+    .clearfix();
+
+//    @media @phone{
+//        padding-left:  (@gutter);
+//        padding-right: (@gutter);
+//    }
+
+}
+
+// Creates a wrapper for a series of columns
+.make-row(@gutter) {
+    margin-left:  (@gutter / -2);
+    margin-right: (@gutter / -2);
+    .clearfix();
+}
+
+.make-grid-columns(){
+
+    [class*='col-'] {
+
+        // Prevent columns from collapsing when empty
+        min-height: 1px;
+        padding-top: (@gutter / 2);
+        padding-bottom: (@gutter / 2);
+        padding-left:  (@gutter / 2);
+        padding-right: (@gutter / 2);
+        float:left;
+
+    }
+
+}
+
+.calc-grid-column(@index, @class, @type) when (@type = width) and (@index > 0) {
+    .col-@{class}-@{index} {
+        width: percentage((@index / @grid-columns));
+    }
+}
+
+.calc-grid-column(@index, @class, @type) when (@type = push) and (@index > 0) {
+    .col-@{class}-push-@{index} {
+        .rel();
+        left: percentage((@index / @grid-columns));
+    }
+}
+
+.calc-grid-column(@index, @class, @type) when (@type = offset) {
+    .col-@{class}-offset-@{index} {
+        margin-left: percentage((@index / @grid-columns));
+    }
+}
+
+.loop-grid-columns(@index, @class, @type) when (@index >= 0) {
+    .calc-grid-column(@index, @class, @type);
+    // next iteration
+    .loop-grid-columns((@index - 1), @class, @type);
+}
+
+.make-grid(@class) {
+    .loop-grid-columns(@grid-columns, @class, width);
+    .loop-grid-columns(@grid-columns, @class, push);
+    .loop-grid-columns(@grid-columns, @class, offset);
+}

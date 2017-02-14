@@ -1,0 +1,74 @@
+    <header class="testimonialsId_<?= $this->id; ?>">
+        <div style="background: url('{{ site.url }}{{ page.headerImage }}') no-repeat;background-position:center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height:100%; width: 100%;"></div>
+        <h1> {{ page.companyName }} </h1>
+        <h2>&quot;{% t page.headline %}&quot;</h2>
+    </header>
+
+    <article class="container">
+
+        <section class="row">
+
+            <div class="col-phoneSmall-12 breadcrumbs">
+
+                <a class="floatLeft" href="{{ base_path_home }}/page/testimonials">{% t generic.clients %}</a>
+                <a class="floatLeft last" href="">{{ page.companyName }}</a>
+
+            </div>
+
+        </section>
+
+        <section class="row">
+
+            <div class="col-tablet-8 content">
+                <p>{{ content }}</p>
+
+                <div class="banner center-text">
+                    <h3>{% t testimonial.banner_title_1 %} {{ page.companyName }} {% t testimonial.banner_title_2 %}</h3>
+                    <a class="btn btn-darkBlue" href="{{ base_path_home }}/benefits">{% t testimonial.button_text %}</a>
+                </div>
+
+                <hr>
+
+            </div>
+
+            <aside class="col-tablet-4">
+                
+                <img src="{{ site.url }}{{ page.authorImage }}" class="sMediumProfileImg" alt="{{ page.author }} avatar">
+
+                <h3>{{ page.author }}</h3>
+                <p>{{ page.role }}</p>
+
+                <img width="170px" src="{{ site.url }}{{ page.companyLogo }}" alt="<?= $this->escapeHtml($testimonial['title']); ?>">
+
+                <h3>Industry</h3>
+                <p>{{ page.industry }}</p>
+
+                <h3>Clients</h3>
+                <p>{{ page.clients }}</p>
+
+            </aside>
+
+        </section>
+
+        <section class="row">
+
+            <div class="col-tablet-8 col-phoneSmall-12">
+
+            <h2>{% t testimonial.read_more_stories %}</h2>
+
+            <a class="moreStories" href="{{ base_path_home }}{{ page.next.url }}">
+                <figure class="testimonialsId_">
+                    <div style="background: url('{{ site.url }}{{ page.next.headerImage }}') no-repeat;background-position:center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height:100%; width: 100%;"></div>
+                </figure>
+
+                <h3>{{ page.next.companyName }}</h3>
+                <p>{{ page.next.author }}</p>
+
+                <p class="noMargin">{% t generic.read_more %}</p>
+            </a>
+
+            </div>
+
+        </section>
+
+    </article>

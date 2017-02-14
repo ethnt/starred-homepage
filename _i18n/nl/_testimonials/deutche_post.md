@@ -1,0 +1,6 @@
+### Gemakkelijke internationale implementatie
+
+Sue Perry - Whitehead is bij Deutsche Post verantwoordelijk voor customer service in heel Europa. Zij gaf aan dat er behoefte was aan een feedbacktool die zowel lokaal als internationaal goede inzichten geeft. Sue zegt: “De tool heeft een ‘light touch’ die onze klanten waarderen; we zijn heel tevreden over de response rates. Het implementeren van de klantfeedbacktool in zes landen over heel Europa was snel en makkelijk te doen. Dit komt mede door de hulp van het Starred team en het gebruiksgemak van de tool. Starred is een jong, vriendelijk en dynamisch bedrijf; niet kost hen teveel moeite. Zij belichamen ‘het antwoord is ja, wat is je vraag?’”
+NPS met 7 punten gestegen
+
+In zes maanden tijd verbeterde Deutsche Post de Net Promoter Score met zeven punten op customer service in de zes Europese regio’s waar Starred is geïmplementeerd als klantfeedbacktool. Sue Perry zegt daarover: “Starred heeft de stem van de klant gebracht in onze dagelijkse gesprekken en ook in de meer formele business reviews. Het is een krachtige tool die gedragsverandering brengt op een subtiele maar tegelijk ook snelle manier.”

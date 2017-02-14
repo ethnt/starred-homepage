@@ -1,0 +1,7 @@
+### Easy international roll out
+
+Sue Perry - Whitehead is responsible for customer support for the whole of Europe with Deutsche Post. She expressed their need for a customer feedback tool that would provide insight both on a local and on an regional level. Sue says: "The tool has a 'light touch' that our customers seem to appreciate; we are very pleased with our response rates. Implementing the customer feedback tool in six countries across Europe has been quick and easy to do. This is thanks to the support of the Starred team and the ease of use of the Starred tool. Starred are a young, friendly and dynamic company; nothing is too much trouble for them. They epitomise ‘the answer is yes, now what is the question?’"
+"Starred epitomise ‘the answer is yes, now what is the question?’"
+NPS went up by 7 points
+
+In six months time Deutsche Post improved their Net Promoter Score by seven points across the six regions in Europe where Starred had been implemented as customer feedback tool. Sue on that: “Starred has bought the voice of our customer into our day to day discussions as well as more formal business reviews. It is a powerful tool that is driving behaviour change in a subtle yet fast way.”

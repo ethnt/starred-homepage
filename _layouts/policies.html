@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<main role="main" id="privacy-starred" class="{{ page.classes }}">
+
+    <header>
+        <h1>{% t page.pageTitle %}</h1>
+        <h2>{% t policies.date %}</h2>
+    </header>
+        
+    <article class="container">
+
+        <section>
+
+            {{ content}}
+
+            <p class="printButton noMargin floatLeft">
+                <a class="btn btn-special" href="javascript:window.print()"><span class="iconStarred-print"></span> Print</a>
+            </p>
+
+        </section>
+
+    </article>
+    
+</main>
+

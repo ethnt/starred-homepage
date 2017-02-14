@@ -1,0 +1,38 @@
+{% assign excerptLimit =  112 %}
+
+{% if forloop.index == 1 %}
+    {% assign className = 'firstArticle' %}
+    {% assign excerptLimit =  255 %}
+{% elsif forloop.index % 2 == 0 %}
+    {% assign className = 'odd' %}
+{% else %}
+    {% assign className = 'even' %}
+{% endif %}
+
+<article class="{{ className }}">
+
+    {% if post.thumbnail and post.thumbnail != '' %}
+
+        <a class="imgwrapper" href="{{ base_path_home }}{{ post.url }}" title="{{ post.title }}">
+            <div style="background: url({{ site.url }}{{ post.thumbnail }}) no-repeat;background-position:center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;width: 100%;"></div>
+        </a>
+
+    {% else %}
+
+        <a class="imgwrapper" href="{{ base_path_home }}{{ post.url }}" title="{{ post.title }}">
+            <div style="background: url({{ site.url }}/images/homepage/weblog/blog_placeholder.jpg) no-repeat;background-position:center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;width: 100%;"></div>
+        </a>
+
+    {% endif %}
+
+    <h1><a href="{{ base_path_home }}{{ post.url }}">{{ post.title }}</a></h1>
+
+    <p class="introtext">{{ post.excerpt | strip | truncate: excerptLimit, '...' }}</p>
+
+    {% if forloop.index == 1 %}
+       
+       <a class="blue" href="{{ base_path_home }}{{ post.url }}">{% t generic.read_more_2 %}</a>
+    
+    {% endif %}
+
+</article>

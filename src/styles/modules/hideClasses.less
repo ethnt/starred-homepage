@@ -1,0 +1,49 @@
+// Hide elements
+.hide { display:none; } // soft hide
+.hideImportant { display: none !important; } // Hide for all devices
+
+@media @desktop-sm, @tablet, @phone, @phone-sm {
+    .hide-lte-desktop-sm { display: none !important; }
+}
+@media @tablet, @phone, @phone-sm {
+    .hide-lte-tablet { display: none !important; }
+}
+@media @phone, @phone-sm {
+    .hide-lte-phone { display: none !important; }
+}
+@media @phone-sm {
+    .hide-lte-phone-sm { display: none !important; }
+}
+
+@media @desktop-sm {
+    .hide-desktop-sm { display: none !important; }
+}
+@media @tablet {
+    .hide-tablet { display: none !important; }
+}
+@media @phone {
+    .hide-phone { display: none !important; }
+}
+@media @phone-sm {
+    .hide-phone-sm { display: none !important; }
+}
+
+@media @phone, @tablet, @desktop-sm {
+    .show-phone-sm { display: none !important; }
+}
+@media @phone-sm, @tablet, @desktop-sm {
+    .show-phone { display: none !important; }
+}
+@media @phone-sm, @phone, @desktop-sm {
+    .show-tablet { display: none !important; }
+}
+@media @phone-sm, @phone, @tablet {
+    .show-desktop-sm { display: none !important; }
+}
+
+@media @tablet, @desktop-sm {
+    .show-lte-phone { display: none !important; }
+}
+@media @desktop-sm {
+    .show-lte-tablet { display: none !important; }
+}

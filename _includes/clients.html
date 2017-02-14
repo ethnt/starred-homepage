@@ -1,0 +1,121 @@
+
+    <header>
+        <h1>{% t clients.header_title %}</h1>
+        <h2>{% t clients.header_subtitle %}</h2>
+    </header>
+
+    <article class="container">
+
+        <section class="row">
+
+            <div class="col-phoneSmall-12 center-text">
+
+                <h2>{% t clients.testimonials_title %}</h2>
+
+            </div>
+
+        </section>
+
+        <section class="row">
+            
+
+
+        {% assign testimonials = site.testimonials | where: 'published', true | sort: 'position' %}
+
+            {% for tstm in testimonials limit:6 %}
+
+                {% if forloop.index <= 2 %} 
+                    {% assign highlighted = true %}
+                {% else %}
+                    {% assign highlighted = false %}
+                {% endif %}
+
+                <a href="{{ base_path_home }}{{ tstm.url }}" class="{% if highlighted %}{{'largeArticle col-tablet-6 col-phoneSmall-12' }} {% else %} {{ 'smallArticle col-desktopSmall-3 col-tablet-6 col-phoneSmall-12' }} {% endif %}">
+
+                    <div>
+
+                        <figure class="testimonialsId_">
+                            <div style="background: url('{{ site.url }}{{ tstm.headerImage }}') no-repeat;background-position:center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; {% if highlighted %} {{ 'height: 200px;' }} {% else %} {{ 'height: 140px;' }} width: 100%; {% endif %}"></div>
+                        </figure>
+
+                       {% if highlighted %}
+                            <blockquote>
+                                <span>&quot;{% t tstm.headline %}&quot;</span>
+                            </blockquote>
+                       {% endif %}
+
+                        <div>
+
+                            <h5>{% t tstm.title %}</h5>
+                            <p>{{ tstm.author }} {% if highlighted %} {{ '- ' }}{{ tstm.role }} {% endif %}</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+        
+        {% endfor %}
+
+        </section>
+
+    </article>
+
+    <article class="banner darkBlue center-text">
+
+        <section>
+            <h2>{% t clients.banner_title %}</h2>
+            <p>{% t clients.banner_text %}</p>
+
+        </section>
+
+    </article>
+
+    <article class="container">
+
+
+        <section class="row">
+
+            {% assign clients = site.clients | where: 'pages', site.lang | sort: 'position' %}
+
+            {% for client in clients %}
+
+                {% assign clientTestimonial = site.testimonials | where:"companyName", client.company | first %}
+
+                <div class="testimonialList col-desktopSmall-3 col-tablet-4 col-phone-6 col-phoneSmall-12 {% if clientTestimonial %} {{ 'addHoverEffect' }} {% endif %}">
+
+                    {% if clientTestimonial %}
+               
+                        <a class="hoverContent" href="{{ base_path_home }}{{ clientTestimonial.url }}">
+
+                            <div>
+                                <p>
+                                    {% capture headline %} {% t clientTestimonial.headline %} {% endcapture %}
+
+                                    {{ headline | strip | truncate:65, '...' }}
+                                </p>
+                                <span class="btn btn-hyperlink">{% t clients.read_more %}</span>
+                            </div>
+
+                        </a>
+
+                    {% endif %}
+
+                    <span class="alignImage">
+                        <img width="100%" src="{{ site.url }}{{ client.logo }}" alt="{{ client.company }} logo">
+                    </span>
+
+                </div>
+
+            {% endfor %}
+
+        </section>
+
+    </article>
+
+    <article class="banner center-text">
+        <h2>{% t clients.banner_2_title %}</h2>
+        <a class="btn btn-darkBlue" href="{{ base_path_home }}/about#contact">{% t generic.get_in_touch %}</a>
+        <a class="btn btn-action" href="{{ base_path_home }}/registration/register">{% t generic.trial_tryout %}</a>
+    </article>
+    
