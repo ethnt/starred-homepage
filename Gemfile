@@ -19,6 +19,6 @@ gem "jekyll", "3.3.1"
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem 'therubyracer', "~> 0.12.2"
-   gem 'less'
    gem 'jekyll-multiple-languages-plugin'
+   gem 'jekyll-sitemap'
 end

@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Starred Homepage
+title: Starred
 email: support@starred.com
 timezone: 'Europe/Amsterdam'
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -21,31 +21,34 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+languages: ["en", "nl"]
+
+exclude_from_localizations: ["js", "images", "styles", "_team", "_testimonials" ]
+
 collections:
   team:
     output: false
     path: ""
+  testimonials:
+    output: true
+    path: ""
+    permalink: /:collection/:title.html
+  clients:
+    output: false
+    path: ""
 
 # Build settings
-
-languages: ["en", "nl"]
-
-exclude_from_localizations: ["js", "images", "styles"]
 
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"
     Server: "localhost:4000"
 
-less:
-  less_dir: _less
-
-future: true
-
 markdown: kramdown
 gems:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -53,3 +56,4 @@ exclude:
   - node_modules
   - gulpfile.js
   - package.json
+  - src

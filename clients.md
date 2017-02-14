@@ -4,7 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: clients
 title: titles.clients
-navigation: [header,footer]
-permalink: /benefits/
+navigation: [header]
+permalink: /clients/
 position: 2
 ---

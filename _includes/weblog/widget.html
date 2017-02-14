@@ -1,0 +1,100 @@
+    <div id="weblogWidgetSticky">
+
+      {% if pageViewState != true %}
+
+        <section id="weblogWidgetSearch">
+
+            <h3>{% t blog.widget.search %}</h3>
+
+            <form method="GET" action="/<?= $this->languageCode; ?>/weblog/search">
+                <input type="text" name="q" id="searchQuery" value="">
+                <button type="submit" class="btn btn-darkBlue">{% t blog.widget.search %}</button>
+            </form>
+
+        </section>
+
+        {% if site.posts.size > 0 %}
+
+        <section id="weblogWidgetCategories">
+
+            <h3>{% t blog.widget.categories_title %}</h3>
+            
+            <ul class="clean">
+            {% assign categories_list = site.categories %}
+              {% if categories_list.first[0] == null %}
+                {% for category in categories_list %}
+                  <li><a href="#{{ category }}">{{ category | capitalize }} ({{ site.tags[category].size }})</a></li>
+                {% endfor %}
+              {% else %}
+                {% for category in categories_list %}
+                  <li><a href="#{{ tag[0] }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
+                {% endfor %}
+              {% endif %}
+            {% assign categories_list = nil %}
+            </ul>
+
+        </section>
+
+        {% endif %}
+
+          <a class="trialBanner" href="{{ base_path_home }}/benefits">
+
+              <img src="{{ site.url }}/images/homepage/weblog/trial_banner_{{ site.lang }}.jpg" width="100%" height="100%" alt="Free trial Starred"/>
+
+          </a>
+
+        {% else %}
+
+          {% assign author = site.team | where:"name", page.author | first %}
+            
+            {% if author %}
+
+              <section id="weblogWidgets" class="creator">
+                  <div class="weblogWidget ">
+                      <div class="clearfix">
+                        <img class="floatLeft sMediumProfileImg" src="{{ site.url }}{{ author.image }}">
+                        <h3>{{ author.name }}</h3>
+                        <p class="noMargin">{{ author.role }}</p>
+                      </div>
+                  </div>
+              </section>
+
+            {% endif %}
+            
+            <section id="weblogWidgets" class="sharingOptions">
+
+                <h3 class="center-text">{% t blog.share_article %}</h3>
+
+                <a class="linkedin" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ base_path_home }}{{ page.url }}&title={{ page.title }}&summary=&source={{ base_path_home }}{{ page.url }}"><span class="iconStarred-linkedin"></span></a>
+
+                <a class="facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ base_path_home }}{{ page.url }}"><span class="iconStarred-facebook"></span></a>
+
+                <a class="twitter" target="_blank" href="https://twitter.com/home?status={{ page.title }}%20via%20%40starred.com:%20{{ base_path_home }}{{ page.url }}"><span class="iconStarred-twitter"></span></a>
+
+                <a class="mail" target="_blank" href="mailto:?&subject={{ page.title }}&body=You%20should%20read%20this%20article%20on%20Starred.com:%0A{{ page.title }}%0A%0A{{ base_path_home }}{{ page.url }}"><span class="iconStarred-mail"></span></a>
+
+            </section>
+
+              <section>
+
+                  <h3>{% t generic.up_to_date %}</h3>
+
+                  <p>{% t blog.newsletter_text %}</p>
+
+                  <!-- Mailchimp signup -->
+                  <div id="mc_embed_signup">
+                      <form action="//starred.us11.list-manage.com/subscribe/post?u=209f3c96f30ca1ec7f049e571&amp;id=b874991677&redirectUrl=www.starred.com/registration/register" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                          <div id="mc_embed_signup_scroll">
+                              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="{% t placeholders.email %}" required>
+                              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                              <div style="position: absolute; left: -5000px;"><input type="text" name="b_209f3c96f30ca1ec7f049e571_063339d3de" tabindex="-1" value=""></div>
+                              <input type="submit" value="{% t generic.sign_up %}" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-darkBlue">
+                          </div>
+                      </form>
+                  </div>
+
+              </section>       
+
+        {% endif %}
+
+    </div>

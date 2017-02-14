@@ -20,6 +20,10 @@
  *
  */
 
+// ------------------------------------------------------------------------------------------ Component Dependencies
+
+var $ = require('jquery');
+
 // ------------------------------------------------------------------------------------------ Component Variables
 
 var COMPONENT_ATTR = 'role="carousel"';
@@ -232,3 +236,6 @@ $(COMPONENT_SELECTOR).each(function(index, element) {
 
 });
 
+// ------------------------------------------------------------------------------------------ Component Exposure
+
+module.exports = Carousel;

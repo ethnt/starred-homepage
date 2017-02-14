@@ -11,25 +11,24 @@
         <ul class="toggleMobileNav floatRight clean">
 
             <li class="shadow"></li>
+            {% assign current = page.url | downcase | split: '/' %}
 
+         
             {% assign pages = site.pages | where: 'navigation', 'header' | sort: 'position' %}
             {% for page in pages %}
                 {% if page.title %}
                 <li>
-                    <a class="page-link" href="{{ page.url }}">{% t page.title %}</a>
+                    <a class="page-link {% if current[1] == page.layout %} {{ 'active' }} {% endif %}" href="{{ base_path_home }}{{ page.url }}">{% t page.title %}</a>
                 </li>
                 {% endif %}
             {% endfor %}            
-      
 
             <li class="exception">
-                <!-- HOMEPAGE_LOGIN_BUTTON -->
-                <a class="btn btn-special loginButton" href="">Login</a>
+                <a class="btn btn-special loginButton" href="">{% t header.log_in_button %}</a>
             </li>
 
             <li class="exception">
-                <!-- HOMEPAGE_SIGN_UP_BUTTON -->
-                <a class="btn btn-action" href="">Sign Up</a>
+                <a class="btn btn-action" href="">{% t header.sign_up_button %}</a>
             </li>
         
         </ul>

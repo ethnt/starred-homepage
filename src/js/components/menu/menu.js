@@ -4,21 +4,18 @@
 
 var $ = require("jquery");
 var visible = require('visible-element')($);
-var styles = require("dropdown.less");
-
 
 // ------------------------------------------------------------------------------------------ Component Variables
 
 var COMPONENT_ATTR = "role='dropdown-menu'";
 var COMPONENT_SELECTOR = "[" + COMPONENT_ATTR + "]";
 
-var DROPDOWN_MENU = "." + styles["dropdown-menu"];
-var DROPDOWN_MENU_PARENT = "." + styles["dropdown-menu-parent"];
-var DROPDOWN_PARENT_SUBMENU = "." + styles["parentSubmenu"];
-var SUBMENU_AUTO_CLOSE = "." + styles["autoCloseSubMenu"];
+var DROPDOWN_MENU = ".dropdown-menu";
+var DROPDOWN_MENU_PARENT = ".dropdown-menu-parent";
+var DROPDOWN_PARENT_SUBMENU = ".parentSubmenu";
+var SUBMENU_AUTO_CLOSE = ".autoCloseSubMenu";
 
 // ------------------------------------------------------------------------------------------ Component Definition
-
 /**
  * Define menu handler
  *

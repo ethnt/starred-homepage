@@ -1,11 +1,5 @@
 "use strict";
 
-// ------------------------------------------------------------------------------------------ Component Dependencies
-
-require("FlashMessage.less");
-
-// ------------------------------------------------------------------------------------------ Component Definition
-
 /**
  * Flash message constructor
  *

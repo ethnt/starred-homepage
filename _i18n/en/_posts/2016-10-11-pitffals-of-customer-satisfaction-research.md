@@ -1,57 +1,136 @@
 ---
 layout: post
-title:  "Wanna know the pitfalls of customer satisfaction research?"
-date:   2016-10-25 -0600
-author: Lars Van Wieren
+title:  "10 New Year’s resolutions in customer feedback for 2017"
+date:   2017-01-26
+author: Lars van Wieren
 published: true
-lang: en
-thumbnail: "/images/homepage/weblog/blog_placeholder.jpg"
+thumbnail: "/images/blog/new-year.jpeg"
 categories: [Customer Happines, Working At Starred]
-tags: [customers, happiness, joy, Lars Van Wieren ]
+tags:
+  - Customers
+  - Happiness
 excerpt_separator: <!--more-->
 ---
 
-Over the last couple of weeks I taught you this crash course client satisfaction. I hope you’ve enjoyed it and learned something as well. May Starred be your tool to put all that fresh knowledge into practice. Now, let's wrap up with some pitfalls!
+New Year’s resolutions. More and more these will extend to work and business life. We therefore make the prediction, unsurprisingly, that a lot of companies will have ‘listening more to customers’ needs’ high on their lists.
 
 <!--more-->
 
-Over the last couple of weeks I’ve attempted to teach you this crash course client satisfaction. I hope you’ve enjoyed it and learned something as well. May Starred be your tool to put all that fresh knowledge into practice. Let's wrap up with some of the common pitfalls.
+Customer feedback is essential for a lot of companies to discover if they are on the right track. Below you will find a few ‘New Year’s resolutions’ that I often hear and see in the market. This list is by no means definitive, after all I don’t have a crystal ball and a monopoly of infinite wisdom . So please feel free to comment with your own resolutions for 2017!
 
-Pitfalls on the road to the Superpromoter
 
-Active customer satisfaction research could bring about a number of pitfalls:
+Resolution 1: An invitation really has to invite
 
-Seeking for excuses; employees feel that they have to account for the results while they should rather see it as guidance for how to improve
-The fear of transparency; when the windows are opened companies are often more inclined to focus on the bad smell leaving the building than the fresh wind that's blowing in
-Client satisfaction research creates expectations; Your client invests time in giving feedback to your company. If nothing is done with it in return, he or she is bound to grow more critical about you. The automatically generated re-rating on Starred will most certainly help you with this problem.
-In addition something that is called ‘Institutional Blindness’ remains a big issue. During a survey performed by Bain & Company across 362 companies it appeared that 80% was of the opinion they deliver superior client experiences. The same question was posed to their clients, revealing that only 8% were of a similar opinion.
+Back in days gone by you needed an expensive research agency to ask your customers for feedback, which made it possible only for the ‘happy few’. Nowadays it’s getting easier and cheaper for you as a company to collect your customer feedback yourself. Automatically this creates an increase of feedback requests for the customers, and an increase of ‘Survey fatigue’. This makes it essential for you as a company to stand out from the pack. As the invitation is the moment to convince your customers to voluntarily offer their feedback, I would like to give you four tips for the highest response:
 
-Begone with that inside-out thinking!
+Start asking the most important question of your survey in the e-mail. “Click here to start the questionnaire” will make your client wonder if he/she even wants to give you their feedback. “Would you recommend us?” with the scores in sight will immediately make your client think about your company.
 
-Organisations work from the inside out. As a rule they are centred around ICT and the many internal processes and procedures. Not the experience and satisfaction of the client are closely being tracked from day to day, but the inside targets on productivity, conversation ratios, accessibility, declarable hours, and delivery times. Results is: clients feel neither heard nor welcome. Have you ever put yourself in the shoes of your clients? Have you ever experiences the whole process from step to step? That should be your first ever step!
+Add as much personal and relevant information about the client in the invitation as you can. Starting with the client’s name, and for example, add the Product Name that has been bought or with which Advisor the client has had a meeting with. When the client feels time and effort has been put in the invitation, you will immediately notice this in the response rate.
 
-After all you don’t just deliver products or services, you deliver emotions and experiences. Your customers’ journey should always be on top of your mind. Only then will you be able to create solid client satisfaction. You have got to take up to challenge to think from the outside in. Ask yourself carefully which steps you (new) client goes through from A (the need) to the Z (realisation).
+Keep it short and simple and write the invitation as if you’re writing an e-mail to your client. So no corporate nonsense and always be honest about your intentions and what the client can expect as a follow-up on their feedback!
 
-Look at this journey as to what are the most critical moments where you can make a difference. These are steps with a chronological order of their own, its own logic, experience and emotions. Each step is a unique chance for you to separate yourself from your competitors, as the client is in a heightened emotional state, making him or her extra receptive. Clients are impervious to the way your business is organised, let alone its internal processes, tasks and responsibilities of its employees. How many employees are trained to be able to put down the phone as quickly as possible?! You know, a client really finds it very annoying when he or she has to deal with different departments with no-one taking any form of ownership for the issue at hand. What you have is a very unhappy client. And I'm guessing you don’t want that.
+Always keep A/B testing your timing, subjects, texts, senders, etc. We all do this non-stop with our website and advertisements, why not do this with customer feedback?
 
-The solution
 
-Now it has become time to stop glooming, and find a solution to this pain. So you’ll have to be breaking through this dynamic and put Customer Journey central. Take away barriers and lower the threshold. A useful metric to gauge this is the Customer Effort Score, which asks: How much effort does the client have to put into working together with this business? Measuring this does not have to be difficult or costly. Some business that changed its communication from “we’ll have this article in stock within 3 weeks” to “your desired article will be arriving at your house in 3 weeks”, saw its Customer Effort Score increase with 20%! 
+Resolution 2: Black boxes are not okay
 
-I would like to wrap up this course with what an organisation should have in its dna in order for its clients to experience the best:
-Have attention for detail (‘little acts of kindness’)
-Put your clients’ experience and emotions central
-View you client as an individual (you see, there is no average client)
-Steer towards your client’s perception instead of your own productivity (never let you employees phone with a predetermines script, or punish them for the number of minutes spend on the phone)
-Be transparent to the outside (communicate openly and hostesly about the happiness of your clients, yes, also on the internet)
-Solve problems superbly, regardless of the cause (dare to say sorry; really putting yourself in your client’ shoes, offering your apologies and giving away something small as a gesture, are all part of this)
-Thrive for excellence! Go for a 9 or a 10
-I am not the first to note that this is easier said than done. For many business the traject described above means a company wide transition of dna. Maybe the metaphor of the egg could serve well to describe this change: When you cook an egg by adding 5000 calories of warmth over the course of three minutes, you will get a cooked egg. However if you would add 5000 calories of warmth over the course of three weeks your egg would break open and reveal a little chick. Too often organisation expect this chick to appear within three minutes.
+We keep hearing this more and more from our recipients: they see customer surveys as a “Black box” and often quickly answer the first page to see how far the “progress percentage” will go. We did a lot of research on this and found out that the ‘silver bullet’ is to maximise the questionnaire to one single page with all questions and the send-button always in sight. We decided to limit our clients to this format, because we see that this will bring more focus on the essence. The percentage of quitters is historically low.
 
-I hope you’ve enjoyed this crash course and that you’ve picked up something useful here and there. Of course I am very curious to hear your feedback on the course. Please feel free to do so by commenting below. I wish you all the best in your endeavour for the super promoter of your company!
 
-Have a great day!
+Resolution 3: Not too long, but not too short either
 
-Lars van Wieren, founder Starred.com
+The customer feedback market has been defined by extremes. Initially we went through the roof and wanted to know every single detail of our customer,  sometimes reaching up to 150 questions. Nowadays we see companies turn the opposite way: by using the Net Promoter Score as ‘the one question to rule them all’.
 
-Starred makes it easy for your company to gather feedback from business clients without losing a lot of valuable time and money. Starred makes it simple.
+When you ask too many questions, your response will be depressingly low and your results will be invalid. When you’re only focusing on the Net Promoter Score, you won’t know what to improve as a company to make sure the recommendations increase. So it’s very important to strike the perfect balance.
+
+I would recommend to limit the number of open questions in your form: Customers mostly prefer to give feedback when it costs little effort, for example by rating ‘stars’ on clear statements. We also see an increase here as the customers give their feedback more often on their mobile phones. When you’ve organised your business well, this will still provide you with a lot of new insights, while your customer is happy to fill in the survey.
+
+
+Resolution 4: Follow-up on the feedback
+
+When asking people why they rarely fill in a customer survey, you will often hear: “They won’t use my feedback anyway”. How do you use the results at this moment? Are they viewed once and then disappear in a drawer somewhere? Or are you actually using them to set specific goals and actions? Make sure it’s actually used and follow-up on your customers to show and tell them how their feedback is being used.
+
+When choosing to work this way, feedback will actually come to life within your company and your customers will be willing to provide you with feedback when you ask them in the future. To achieve this, here are three tips:
+
+Make sure the Thank you-page is dynamic and adjusts to the mood of the customer. In most researches you will receive a “Thank you for your feedback, you can now close the browser” after filling in a survey. Not the instant gratification a customer is waiting for after filling in a survey, and a missed opportunity for you. Is the customer extremely  dissatisfied? Then follow-up on this by showing a thank you-page that will tell the customers that an employee will contact them about their feedback. Is the customer very satisfied? Then encourage the customer to share his/her experience with others!
+
+Make sure you will immediately receive a notification when a customer is extremely dissatisfied. This can often be solved easily and makes sure you’ve covered the situation for worse. A survey is nowadays often seen as a type of communication, and ignoring the problems will make the customer feel like he/she never received a reaction.
+
+Explain in the invitation to your customers that you will update them after a number of months with what you’ve done with their feedback. This will also put a little extra pressure on your own company to actually work on the improvements. Follow-up on this after a few months, preferably on their specific feedback. This will make the customer feel heard and have an opinion that matters. Software makes it possible to automate this follow-up while still making sure it’s personal.
+
+We already see an increase in customer loyalty with our clients that follow this advice. So don’t refer to B2B or B2C in 2017, but to H2H: Human-to-Human.
+
+
+Resolution 5: Asking feedback over all channels
+
+The number of channels that you can use to reach out to your customers in 2017 will further increase. Which channel fits your company best? It’s simple: the channel your customers use. Don’t look at it as work, but as an opportunity!
+
+Because when you collect feedback on the contact via this channel, the you will exactly see how every channel is experienced by your customer. Add the costs per channel in your analysis, and you will exactly know which channel is the most efficient per target group. Redirect your customers to the right channel and you will see a great cost-decrease and a high satisfaction increase. We see this happening a lot via WhatsApp for example, but this will evolve constantly.
+
+
+Resolution 6: Integration of many more (feedback)sources for extended analysis.  
+
+Besides the feedback you’ve asked your customers for via surveys, there is always the ‘unsolicited feedback’ that customers proactively give via Social media for example.
+
+This kind of feedback can be found on a company’s Facebook page, in reviews on Trustpilot, their Twitter feed, in Customer Service e-mails and in thousands of phone calls that companies have with their customers. This is directly given by the customers, on broad topics and in big amounts. Now text- and speech-analytics are getting more and more advanced, this big pile of feedback turns into a more useful source of information.
+
+So why do something with the feedback you’ve asked your customer about, but leave out the feedback they voluntarily gave you? Combining these two is still new but will be more and more important in 2017. Social Media Monitoring solutions as Buzzcapture, Coosto, OBI4Wan, Media Injection and Tracebuzz are developing fast in integrating these two worlds.
+
+
+Resolution 7: Automating will become the default
+
+It’s still amazing how many companies don’t have their customer feedback automated and still trust ‘the annual customer feedback survey’. Besides the never ending questionnaire this results into, it’s also dangerous to build your improvement plan on one moment of feedback. I recently spoke to a company that had a big breakdown shortly before they sent out their annual survey. Probably no surprise: the results turned out not so positive, while the company had one of their best years ever.
+
+2017 will be the year for every self-respecting company to automate their feedback process, because this brings along so many advantages:
+
+You will prevent cherry picking: more honest feedback
+
+You will democratise customer feedback
+
+Feedback will be a Continuous Measurement
+
+It is a lot cheaper
+
+You have more time on hands to actually get to work on the given feedback
+
+A CRM-system that is up-to-date
+
+It is save (no more CSV files with client data sent back and forth)
+
+It’s automatically set on the agenda
+
+Do the above mean that the person responsible for this subject within the company will be fired in 2017? Definitely not. It will make this person available for the actual important aspects of customer feedback: following up and making changes, and increasing the impact of the customer on the company agenda.
+
+
+Resolution 8: Combining customer satisfaction with employee satisfaction
+
+Most companies ask for feedback from both their customers and from their employees. Mostly these are separate areas of research, but in actuality it’s  logical to say that these customers and employees work together.
+
+In 2017 we will see the first steps towards combining these surveys. So when your customers complain about the lack in knowledge within the company, but your employees complain about the lack in training, you know what the first key to success is.
+
+Important to explain here is that luckily customer feedback mostly isn’t anonymous, but employee feedback mostly is. Fortunately, smart software will make it possible for you to gain insights, while the employee’s anonymity is still guaranteed.
+
+
+Resolution 9: Company-wide access to the feedback
+
+A while ago I spoke to a person that hated the annual customer survey within her organisation. She called it a ‘higher management trick’. “Once a year we hear afterwards that there has been research and all negative aspects are zoomed in on. There are consequences, without any constructive eye on how we can improve this together”.
+
+When the employees experience the customer research like this, they will easily start looking for excuses. They get the feeling they have to take responsibility for the results. Make sure that the entire organisation takes part in the research and give more employees access to the results.
+
+
+Resolution 10: Feedback and reviews are two separate worlds
+
+In 2017 we see a bigger separation in online reviews and customer feedback. The former is about what a customer writes about you on the internet, the latter concerns what a customer tells you directly.
+
+We feel that there is a big difference between “reviews” and “customer feedback”. Reviews have become a goal in themselves, because they can be used purely as a marketing mechanism. No problem there of course, but this won’t tell you how you can better respond to your customers in the future. We saw some companies started ‘cherry picking’ here as well, because they aimed for high reviews. The customer they knew were more critical were left out of the surveys, which made the results less reliable.
+
+Customer feedback has -opposite to reviews- a completely internal character. There is no ‘double agenda’, it doesn’t serve as a marketing channel to gain new customers. Customer feedback is not a goal in itself; it’s a means to gain excellent customer experiences. When customers know it’s only for internal use (and they won’t be put online with name and surname) they will be more honest.
+
+
+Conclusion: Go for customer happiness in 2017
+
+In 2017, now more than ever, you will be rated on the way you ask for customer feedback.  So always try to see things through the customer’s eyes and think about how they will experience your invitation for feedback. When you wouldn’t fill it in yourself, why would your customer do so? See the response rate as a score for quality and keep changing and optimizing to increase this score.
+
+It’s also very important to remember that your customer is automatically more satisfied when you ask for his or her opinion, with the right set-up of course. By acting on the feedback, you will close the backdoor for customers to leave. This is in line with the growing customer focus we experience more and more in companies. By startups that make it more and more difficult for the corporate organisations, the traditional companies search for defence in an obsessive customer focus, eMarketer has reported.
+
+So be aware of the fact that expectations increase. The customer has more comparable alternatives within reach than you would expect Where you used to only be compared to your direct competition, they now also have companies in sight that will do ‘everything for a smile’. And these companies often show an alternative option. The bar has been set higher by them. A satisfied customer isn’t good enough anymore, a happy customer should be your number one resolution for 2017.

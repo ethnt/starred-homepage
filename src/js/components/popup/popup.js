@@ -1,5 +1,9 @@
 "use strict";
 
+// ------------------------------------------------------------------------------------------ Component Dependencies
+
+var $ = require('jquery');
+
 // ------------------------------------------------------------------------------------------ Component Variables
 
 var COMPONENT_ATTR = "role='popup'";
@@ -725,3 +729,6 @@ $(COMPONENT_SELECTOR).each(function(index, element) {
 
 });
 
+
+// Exposing Popup as CommonJS module
+module.exports = Popup;

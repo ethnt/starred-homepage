@@ -6,12 +6,8 @@
 
                 <div class="col-phoneSmall-12 col-phone-6 col-tablet-4">
 
-                    <!-- HOMEPAGE_FOOTER_ABOUT_TITLE -->
-                    <h5>About Starred</h5>
-                    <!-- HOMEPAGE_FOOTER_ABOUT_TEXT -->
-                    <p>We don't believe in long, boring and expensive customer satisfaction research. We understand that client feedback is essential, but we think that smart, easy to use software could make it more enjoyable for everyone involved as well as provide an affordable solution.</p>
-
-                                              
+                    <h5>{% t footer.about_title %}</h5>
+                    <p>{% t footer.about_text %}</p>
 
                 <div id="languages" class="custom-select black" onclick="$('#languageSelector').toggle();">
 
@@ -42,49 +38,39 @@
                     <ul class="clean floatLeft">
                     {% assign pages = site.pages | where: 'navigation', 'footer' | sort: 'position' %}
                     {% for page in pages %}
-                        {% if page.title %}
+                        {% if page.title and page.redir_to == nil %}
                         <li>
-                            <a href="{{ page.url }}">{% t page.title %}</a>
+                            <a href="{{ base_path_home }}{{ page.url }}">{% t page.title %}</a>
+                        </li>
+                        {% elsif page.title and page.redir_to  %}
+                        <li>
+                            <a href="{{ page.redir_to }}">{% t page.title %}</a>
                         </li>
                         {% endif %}
                     {% endfor %}      
                     </ul>
                     <ul class="clean floatLeft">
-                        <!-- HOMEPAGE_FOOTER_SITEMAP_CONTACT_BUTTON -->
-                        <li><a href="">Contact</a></li>
-                        
-                        <!-- HOMEPAGE_FOOTER_SITEMAP_LOGIN_BUTTON -->
-                        <li><a class="loginButton" href="">Login</a></li>
-
-                        <!-- HOMEPAGE_FOOTER_SITEMAP_PRIVACY_BUTTON -->
-                        <li><a target="_blank" href="">Privacy</a></li>
-                        <!-- HOMEPAGE_FOOTER_SITEMAP_TUA_BUTTON -->
-                        <li><a target="_blank" href="">Conditions</a></li>
-                        <!-- HOMEPAGE_FOOTER_SITEMAP_FEATURES_BUTTON -->
-                        <li><a href="">Benefits</a></li>
+                        <li><a href="{{ base_path_home }}/about/#contact">{% t footer.sitemap_contact_button%}</a></li>
+                        <li><a class="loginButton" href="">{% t footer.sitemap_login_button %}</a></li>
+                        <li><a target="_blank" href="{{ base_path_home }}/privacy/">{% t footer.sitemap_privacy_button %}</a></li>
+                        <li><a target="_blank" href="{{ base_path_home }}/termsandconditions/">{% t footer.sitemap_tua_button %}</a></li>
+                        <li><a href="{{ base_path_home }}/featurelist/accounts/">{% t footer.sitemap_features_button %}</a></li>
                     </ul>
                 </div>
 
                 <!--Available newsletter in the next sprint-->
                 <div class="col-phoneSmall-12 col-phone-12 col-tablet-4">
-                    <!-- HOMEPAGE_FOOTER_NEWSLETTER_SIGNUP_TITLE -->
-                    <h5>Subscribe to our newsletter</h5>
-                    <!-- HOMEPAGE_FOOTER_NEWSLETTER_SIGNUP_TEXT -->
-                    <p>Curious about the developments of Starred? Curious how we look at client feedback? Subscribe to our newsletter and we keep you informed!</p>
-                    <!--<input class="black floatLeft" type="text" placeholder="E-mail address"/>
-                    <a class="btn btn-primary floatRight" href="#">Registreer</a>-->
+                    <h5>{% t footer.newsletter_signup_title %}</h5>
+                    <p>{% t footer.newsletter_signup_text %}</p>
 
                     <!-- Begin MailChimp Signup Form -->
 
                     <div id="mc_embed_signup">
                         <form action="//starred.us11.list-manage.com/subscribe/post?u=209f3c96f30ca1ec7f049e571&amp;id=b874991677&redirectUrl=www.starred.com/registration/register" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                             <div id="mc_embed_signup_scroll">
-                                <!-- HOMEPAGE_FOOTER_NEWSLETTER_SIGNUP_PLACEHOLDER -->
-                                <input type="email" value="" name="EMAIL" class="email black" id="mce-EMAIL" placeholder="Email address" required>
-                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <input type="email" value="" name="EMAIL" class="email black" id="mce-EMAIL" placeholder="{% t footer.newsletter_signup_placeholder %}" required>
                                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_209f3c96f30ca1ec7f049e571_063339d3de" tabindex="-1" value=""></div>
-                                <!-- HOMEPAGE_FOOTER_NEWSLETTER_SIGNUP_BUTTON -->
-                                <input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary">
+                                <input type="submit" value="{% t footer.newsletter_signup_button %}" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary">
                             </div>
                         </form>
                     </div>
@@ -101,21 +87,15 @@
 
   {% if jekyll.environment == "production" %}
   
-    {% include analytics.html %}
+    {% include scripts/analytics.html %}
 
-    {% include hotjar.html %}  
+    {% include scripts/hotjar.html %}  
 
   {% endif %}
 
 
-  <!-- @TODO CHECK COOKIES -->
-
-<!-- Load jQuery -->
-<script src="{{ site.url }}/src/js/jquery-3.1.1.min.js"></script>
+  <!-- @TODO COOKIE CONSENT? -->
 
 <!-- Load Componenets -->
-<script src="{{ site.url }}/src/js/components/popup/popup.js"></script>
-<script src="{{ site.url }}/src/js/components/carousel/carousel.js"></script>
-
-<script type="text/javascript"></script>
-  <!-- @TODO INCLUDE COMPONENET JS -->
+<script src="{{ site.url }}/public/bundle.js"></script>
+<script src="{{ site.url }}/public/components.js"></script>
